@@ -16,7 +16,7 @@ const HeroView = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="workshop-tag">2nd International Workshop</div>
+            <div className="workshop-tag">2nd International Conference</div>
             <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent">'20</span></h1>
             
             <p className="hero-intro">
@@ -75,11 +75,11 @@ const HeroView = () => {
         }
         .hero-cinematic {
           position: relative;
-          min-height: 850px; /* Stronger min-height to prevent clipping */
-          padding: 80px 0; /* Vertical breathing room */
+          min-height: calc(100vh - 120px); /* Fill the screen precisely */
+          padding: clamp(2rem, 5vh, 5rem) 0;
           display: flex;
           align-items: center;
-          overflow: hidden;
+          overflow: visible; /* Ensure nothing is clipped */
           width: 100%;
         }
         .hero-bg-overlay {
@@ -124,7 +124,6 @@ const HeroView = () => {
         h1 {
           font-size: clamp(2.5rem, 8vw, 5rem);
           line-height: 1;
-          margin-bottom: clamp(1.5rem, 4vh, 3rem);
           font-weight: 900;
         }
 
@@ -177,6 +176,7 @@ const HeroView = () => {
         }
 
         .hero-cta-group {
+          margin-top: -20px;
           display: flex;
           gap: 20px;
         }
