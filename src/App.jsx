@@ -9,9 +9,11 @@ import {
   Info, 
   Menu, 
   X,
-  ChevronDown,
+  FileEdit,
+  CreditCard,
+  Award,
   Globe,
-  Award
+  Star
 } from 'lucide-react';
 import HeroView from './views/HeroView';
 import TopicsView from './views/TopicsView';
@@ -19,16 +21,22 @@ import CommitteesView from './views/CommitteesView';
 import DeadlinesView from './views/DeadlinesView';
 import SpeakersView from './views/SpeakersView';
 import InfoView from './views/InfoView';
+import SubmissionsView from './views/SubmissionsView';
+import RegistrationView from './views/RegistrationView';
+import AcceptedWorksView from './views/AcceptedWorksView';
 import NewsTicker from './components/NewsTicker';
 import './App.css';
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home, component: HeroView },
-  { id: 'topics', label: 'Topics & Scope', icon: BookOpen, component: TopicsView },
-  { id: 'deadlines', label: 'Important Dates', icon: Calendar, component: DeadlinesView },
-  { id: 'speakers', label: 'Invited Speakers', icon: Mic2, component: SpeakersView },
+  { id: 'topics', label: 'Topics', icon: BookOpen, component: TopicsView },
+  { id: 'deadlines', label: 'Dates', icon: Calendar, component: DeadlinesView },
+  { id: 'speakers', label: 'Speakers', icon: Mic2, component: SpeakersView },
+  { id: 'accepted', label: 'Accepted', icon: Award, component: AcceptedWorksView },
+  { id: 'submissions', label: 'Submissions', icon: FileEdit, component: SubmissionsView },
+  { id: 'registration', label: 'Registration', icon: CreditCard, component: RegistrationView },
   { id: 'committees', label: 'Committees', icon: Users, component: CommitteesView },
-  { id: 'info', label: 'Practical Info', icon: Info, component: InfoView },
+  { id: 'info', label: 'Venue', icon: Info, component: InfoView },
 ];
 
 function App() {
@@ -40,7 +48,7 @@ function App() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setUserCount(prev => {
-        const delta = Math.floor(Math.random() * 3) - 1; // -1, 0, or 1
+        const delta = Math.floor(Math.random() * 3) - 1;
         const next = prev + delta;
         return next > 40 ? 40 : next < 25 ? 25 : next;
       });
@@ -56,7 +64,7 @@ function App() {
       <header className="main-header">
         <div className="nav-container container">
           <div className="branding">
-            <h1 className="logo">WISCT<span className="accent">'20</span></h1>
+            <h1 className="logo">CWISCT<span className="accent">'26</span></h1>
             <div className="indexing-badges">
               <span className="badge-mini">Scopus</span>
               <span className="badge-mini">ACM</span>
@@ -83,7 +91,7 @@ function App() {
               <span className="live-dot"></span>
               <span className="count-val">{userCount} Online</span>
             </div>
-            <button className="btn-primary-shiny highlight">Call for Paper</button>
+            <button className="btn-primary-shiny highlight" onClick={() => setActiveTab('submissions')}>Call for Paper</button>
             <button className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? <X /> : <Menu />}
             </button>
@@ -103,13 +111,15 @@ function App() {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                className="mobile-nav-link"
+                className={`mobile-nav-link ${activeTab === item.id ? 'active' : ''}`}
                 onClick={() => {
                   setActiveTab(item.id);
                   setMobileMenuOpen(false);
                 }}
               >
-                <item.icon size={18} /> {item.label}
+                <item.icon size={18} /> 
+                <span className="mobile-label">{item.label}</span>
+                {activeTab === item.id && <div className="mobile-active-dot"></div>}
               </button>
             ))}
           </motion.div>
@@ -118,34 +128,54 @@ function App() {
 
       <NewsTicker />
 
-      {/* Hero Section - Persistent for Home, or maybe adaptive */}
+      {/* Main Multi-Section Viewport */}
       <section className="dynamic-viewport">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.4 }}
-            className="view-render-area"
-          >
-            <ActiveComponent />
-          </motion.div>
-        </AnimatePresence>
-      </section>
+        <div className="view-content-stack">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4 }}
+              className="view-render-area"
+            >
+              <ActiveComponent />
+            </motion.div>
+          </AnimatePresence>
 
-      {/* Scientific Impact Footer (Fixed) */}
-      <footer className="compact-footer">
-        <div className="container footer-content">
-          <div className="footer-left">
-            <span>Organized by <strong>TIM Laboratory</strong> & FSBM</span>
+          {/* Sponsors Section (Always present at the bottom of content) */}
+          <div className="sponsors-registry container">
+            <div className="registry-header-hud">
+              <div className="accent-tag">STRATEGIC PARTNERS</div>
+              <div className="title-row">
+                <Star size={16} className="accent" />
+                <span>OFFICIAL SPONSORS & SUPPORTERS</span>
+              </div>
+            </div>
+            <div className="sponsors-grid">
+              <div className="sponsor-logo-box"><span>Hassan II University</span></div>
+              <div className="sponsor-logo-box"><span>FSBM Casablanca</span></div>
+              <div className="sponsor-logo-box"><span>CNRST Morocco</span></div>
+              <div className="sponsor-logo-box"><span>IEEE Africa</span></div>
+              <div className="sponsor-logo-box"><span>ACM Morocco</span></div>
+            </div>
           </div>
-          <div className="footer-right">
-            <div className="social-pill"><Globe size={14} /> wisct2020.sciencesconf.org</div>
-            <div className="social-pill"><Award size={14} /> Scopus Indexed</div>
-          </div>
+          
+          {/* Scientific Impact Footer */}
+          <footer className="compact-footer">
+            <div className="container footer-content">
+              <div className="footer-left">
+                <span>Organized by <strong>TIM Laboratory</strong> & FSBM</span>
+              </div>
+              <div className="footer-right">
+                <div className="social-pill"><Globe size={14} /> cwisct2026.sciencesconf.org</div>
+                <div className="social-pill"><Award size={14} /> Scopus Indexed</div>
+              </div>
+            </div>
+          </footer>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }

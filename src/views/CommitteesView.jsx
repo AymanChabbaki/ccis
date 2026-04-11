@@ -142,14 +142,14 @@ const CommitteesView = () => {
               className={`min-tab ${activeTab === 'organizing' ? 'active' : ''}`}
               onClick={() => setActiveTab('organizing')}
             >
-              Organizing Body
+              Organizing
               {activeTab === 'organizing' && <motion.div layoutId="tab-line" className="tab-line" />}
             </button>
             <button 
               className={`min-tab ${activeTab === 'scientific' ? 'active' : ''}`}
               onClick={() => setActiveTab('scientific')}
             >
-              Scientific Council
+              Scientific
               {activeTab === 'scientific' && <motion.div layoutId="tab-line" className="tab-line" />}
             </button>
           </div>
@@ -242,14 +242,14 @@ const CommitteesView = () => {
         /* Sticky Panel - Now targets the viewpoint specifically */
         .registry-sticky-panel {
           position: sticky;
-          top: -20px; /* Aligns with view container padding offset */
-          z-index: 1000;
-          background: var(--bg-dark); /* Ensure it covers text below */
+          top: 79px; /* Slighly offset to prevent pixel gap with header */
+          z-index: 50; /* High enough to stay above list, low enough for mobile menu */
+          background: var(--bg-dark);
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 20px 0;
-          margin-bottom: 40px;
+          padding: 15px 0;
+          margin-bottom: 30px;
           border-bottom: 1px solid var(--border-glass);
         }
 

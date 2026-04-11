@@ -17,7 +17,7 @@ const HeroView = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="workshop-tag">2nd International Conference</div>
-            <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent">'20</span></h1>
+            <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent">'26</span></h1>
             
             <p className="hero-intro">
               Bridging the gap between Urban Infrastructure and Artificial Intelligence to build the sustainable cities of tomorrow.

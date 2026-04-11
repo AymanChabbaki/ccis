@@ -84,8 +84,8 @@ const InfoView = () => {
                   <span>DIRECT CONTACT</span>
                 </div>
                 <div className="contact-grid">
-                  <a href="mailto:wisct2020@gmail.com" className="contact-link">
-                    <Mail size={14} /> wisct2020@gmail.com
+                  <a href="mailto:cwisct2026@gmail.com" className="contact-link">
+                    <Mail size={14} /> cwisct2026@gmail.com
                   </a>
                   <a href="tel:+212522704671" className="contact-link">
                     <Phone size={14} /> +212 (0) 522 70 46 71
@@ -126,9 +126,14 @@ const InfoView = () => {
             </div>
             
             <div className="map-actions">
-              <button className="btn-secondary-outline">
+              <a 
+                href="https://www.google.com/maps?cid=16468260712488604832" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="btn-secondary-outline"
+              >
                 <Navigation size={14} /> GET DIRECTIONS
-              </button>
+              </a>
               <button className="btn-secondary-outline">
                 <ExternalLink size={14} /> CITY GUIDE (PDF)
               </button>

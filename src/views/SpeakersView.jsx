@@ -126,8 +126,9 @@ const SpeakersView = () => {
         }
         .speaker-image-frame {
           position: relative;
-          width: 400px;
-          height: 500px;
+          width: 100%;
+          max-width: 400px;
+          aspect-ratio: 4/5;
           border-radius: 24px;
           overflow: hidden;
           background: #000;
@@ -138,7 +139,6 @@ const SpeakersView = () => {
           height: 100%;
           object-fit: cover;
           opacity: 0.9;
-          transition: 0.5s;
         }
         .image-overlay-glow {
           position: absolute;
@@ -171,8 +171,17 @@ const SpeakersView = () => {
           margin-bottom: 20px;
         }
         .quote-icon { color: var(--accent); opacity: 0.2; margin-bottom: 10px; }
-        .speaker-header-meta h2 { font-size: 2.8rem; line-height: 1.1; margin-bottom: 10px; }
-        .affiliation { font-size: 1.2rem; color: #fff; opacity: 0.7; margin-bottom: 30px; }
+        .speaker-header-meta h2 { 
+          font-size: clamp(1.8rem, 5vw, 2.8rem); 
+          line-height: 1.1; 
+          margin-bottom: 10px; 
+        }
+        .affiliation { 
+          font-size: clamp(1rem, 2vw, 1.2rem); 
+          color: #fff; 
+          opacity: 0.7; 
+          margin-bottom: 30px; 
+        }
 
         .speaker-tags { display: flex; gap: 10px; margin-bottom: 40px; }
         .s-tag { 
