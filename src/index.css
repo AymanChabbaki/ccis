@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary: #0B2046;
+  --accent: #00E5FF;
+  --bg-dark: #050E1D;
+  --bg-card: rgba(11, 32, 70, 0.4);
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B8C1;
+  --border-glass: rgba(255, 255, 255, 0.1);
+  
+  /* Safe Zone Variables */
+  --gutter: clamp(1.5rem, 5vw, 4rem);
+  --max-width: 1400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  overflow: hidden; /* Prevent body scroll, use viewport container */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Scrollbar for Inner Content */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #fff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
