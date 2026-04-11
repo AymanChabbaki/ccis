@@ -253,10 +253,26 @@
   .desktop-nav { display: none; }
   .mobile-toggle { display: block; padding-right: 0; }
   .container { padding: 0 var(--gutter); }
-  .header-right { gap: 0; } /* Remove gaps when buttons are hidden */
+  .header-right { gap: 0; } 
   .user-count-header { display: none; }
   .btn-primary-shiny.highlight { display: none; }
   .logo { font-size: 1.4rem; }
+}
+
+/* Nano-Mobile Refinement (e.g., 344px) */
+@media (max-width: 360px) {
+  :root {
+    --gutter: 1rem; /* Reclaim space for content */
+  }
+  .branding { gap: 10px; }
+  .indexing-badges { display: none; } /* Hide in header to prevent overcrowding */
+  .logo { font-size: 1.2rem; }
+  
+  /* Symmetry Restoration for H2/H3 HUDs */
+  .registry-header-hud {
+    padding-left: 15px !important;
+    border-left-width: 2px !important;
+  }
 }
 
 .container {

@@ -234,6 +234,12 @@ const TopicsView = () => {
           overflow: hidden;
           backdrop-filter: blur(10px);
         }
+        @media (max-width: 600px) {
+          .topics-hud { padding: 25px var(--gutter); } /* Synchronized with baseline */
+          .hud-header { gap: 15px; margin-bottom: 20px; }
+          .hud-title-meta h2 { font-size: 1.5rem; }
+          .track-desc { font-size: 1rem; margin-bottom: 30px; }
+        }
         .hud-header { display: flex; align-items: center; gap: 30px; margin-bottom: 30px; }
         .large-icon { color: var(--accent); opacity: 0.8; }
         .track-id-slug { font-size: 0.7rem; font-weight: 800; opacity: 0.4; letter-spacing: 1px; }

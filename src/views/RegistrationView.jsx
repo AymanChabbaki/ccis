@@ -189,6 +189,17 @@ const RegistrationView = () => {
         @media (max-width: 1024px) {
           .registration-grid { grid-template-columns: 1fr; }
         }
+        @media (max-width: 360px) {
+          .registration-header-hud { padding-left: 15px; border-left-width: 2px; }
+          .fee-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 15px;
+          }
+          .fee-meta { flex-direction: column; align-items: flex-start; gap: 5px; }
+          .registration-header-hud h2 { font-size: clamp(1.6rem, 5vw, 2rem); }
+        }
       `}</style>
     </div>
   );

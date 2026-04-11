@@ -267,6 +267,23 @@ const HeroView = () => {
           .btn-glow, .btn-ghost { width: 100%; justify-content: center; }
           .stat-pill { flex: 1; min-width: 120px; padding: 15px; }
         }
+
+        @media (max-width: 360px) {
+          .hero-main-text { padding: 0 !important; margin: 0 !important; width: 100%; display: block; transform: none !important; }
+          h1 { 
+            font-size: 1.8rem !important; /* Scale down to prevent right-side overflow */
+            margin-left: -5px !important; 
+            padding-left: 0 !important; 
+            letter-spacing: -0.5px !important; 
+            text-align: left !important;
+            display: block;
+            width: 100%;
+            transform: none !important;
+            word-break: keep-all;
+          }
+          .workshop-tag { margin-left: -2px !important; font-size: 0.75rem; }
+          .hero-cta-group { margin-left: 0 !important; padding-left: 0 !important; width: 100%; }
+        }
       `}</style>
     </div>
   );

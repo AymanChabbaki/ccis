@@ -349,6 +349,8 @@ const CommitteesView = () => {
         @media (max-width: 768px) {
           .index-members-grid { grid-template-columns: 1fr; }
           .wall-grid { grid-template-columns: 1fr; }
+          .index-title-row { padding-left: 0; }
+          .index-title-row h3 { font-size: 0.9rem; letter-spacing: 2px; }
         }
       `}</style>
     </div>

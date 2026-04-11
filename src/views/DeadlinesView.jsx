@@ -326,6 +326,8 @@ const DeadlinesView = () => {
           .node-label { text-align: left; }
           .node-details-pop { left: 120%; top: 0; }
           .hud-grid { flex-direction: column; align-items: flex-start; gap: 30px; }
+          .active-hud-panel { padding: 20px var(--gutter); border-left-width: 2px; border-radius: 12px; }
+          .hud-main-info h3 { font-size: 1.3rem; }
         }
       `}</style>
     </div>

@@ -200,6 +200,11 @@ const SubmissionsView = () => {
           .submission-grid { grid-template-columns: 1fr; }
           .rules-grid { grid-template-columns: 1fr; }
         }
+        @media (max-width: 360px) {
+          .portal-header-hud { padding-left: 15px; border-left-width: 2px; }
+          .portal-header-hud h2 { font-size: 1.8rem; }
+          .author-portal { gap: 30px; }
+        }
       `}</style>
     </div>
   );

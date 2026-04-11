@@ -233,9 +233,9 @@ const SpeakersView = () => {
           .speaker-explorer { grid-template-columns: 1fr; justify-items: center; text-align: center; }
           .speaker-image-frame { width: 100%; max-width: 400px; margin-bottom: 40px; }
           .speaker-tags { justify-content: center; }
-          .speaker-header-meta h2 { font-size: 2rem; }
+          .speaker-header-meta h2 { font-size: 2rem; text-align: center; }
           .speaker-nav-controls { justify-content: center; }
-          .speaker-bio-box { border-left: none; border-top: 2px solid var(--accent); }
+          .speaker-bio-box { border-left: none; border-top: 2px solid var(--accent); padding: 20px; }
         }
       `}</style>
     </div>
