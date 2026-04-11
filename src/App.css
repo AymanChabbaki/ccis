@@ -146,8 +146,11 @@
 /* Viewport Area */
 .dynamic-viewport {
   flex: 1;
+  overflow-y: auto;
   overflow-x: hidden;
   background: radial-gradient(circle at top, rgba(0, 229, 255, 0.03), transparent);
+  height: 0; /* Important for flex-grow containers to scroll properly */
+  min-height: 0;
 }
 
 .view-render-area {

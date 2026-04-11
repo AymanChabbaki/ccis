@@ -24,7 +24,9 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-primary);
-  overflow: hidden; /* Prevent body scroll, use viewport container */
+  /* Unlocked global overflow to allow natural navigation of long lists */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
