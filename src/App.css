@@ -34,10 +34,16 @@
   gap: 20px;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+.navbar-logo {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.3));
 }
 
 .logo .accent { color: var(--accent); }

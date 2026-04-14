@@ -104,7 +104,7 @@ const InfoView = () => {
           >
             <div className="map-frame">
               <img 
-                src="C:\Users\HP ZBOOK\.gemini\antigravity\brain\f876afdd-4c08-4a19-9e04-eda2a81a7202\casablanca_venue_map_hud_1775943362463.png" 
+                src="/casablanca_venue_map_hud_1775943362463.png" 
                 alt="Venur Map" 
                 className="map-visual"
               />
@@ -134,9 +134,6 @@ const InfoView = () => {
               >
                 <Navigation size={14} /> GET DIRECTIONS
               </a>
-              <button className="btn-secondary-outline">
-                <ExternalLink size={14} /> CITY GUIDE (PDF)
-              </button>
             </div>
           </motion.div>
         </div>

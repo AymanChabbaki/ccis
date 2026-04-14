@@ -98,7 +98,7 @@ const DeadlinesView = () => {
                 <div className="node-circle-wrapper">
                   <div className="node-outline"></div>
                   <div className="node-core">
-                    <phase.icon size={20} />
+                    <phase.icon size={28} />
                   </div>
                   {phase.status === 'completed' && (
                     <div className="node-status-badge">
@@ -212,31 +212,31 @@ const DeadlinesView = () => {
         /* Node Visuals */
         .node-circle-wrapper {
           position: relative;
-          width: 50px;
-          height: 50px;
+          width: 70px;
+          height: 70px;
           display: flex;
           align-items: center;
           justify-content: center;
         }
         .node-core {
-          width: 40px;
-          height: 40px;
+          width: 60px;
+          height: 60px;
           background: #050E1D;
           border: 1px solid var(--border-glass);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: rgba(255,255,255,0.3);
+          color: rgba(255,255,255,0.4);
           z-index: 5;
           transition: 0.3s;
         }
         .node-outline {
           position: absolute;
           inset: 0;
-          border: 1px solid rgba(255,255,255,0.1);
+          border: 1px solid rgba(0, 229, 255, 0.2);
           border-radius: 50%;
-          transform: scale(1.2);
+          transform: scale(1.3);
         }
         
         .completed .node-core { color: var(--accent); border-color: var(--accent); background: rgba(0, 229, 255, 0.05); }
@@ -271,18 +271,19 @@ const DeadlinesView = () => {
           flex-direction: column;
           gap: 5px;
         }
-        .phase-title { font-weight: 800; font-size: 0.85rem; color: #fff; }
-        .phase-date { font-size: 0.75rem; color: var(--text-secondary); opacity: 0.6; }
+        .phase-title { font-weight: 800; font-size: 0.95rem; color: #fff; }
+        .phase-date { font-weight: 600; font-size: 0.8rem; color: #fff; opacity: 0.9; }
 
         .node-details-pop {
           position: absolute;
           top: 120%;
-          background: var(--bg-card);
-          padding: 15px;
-          border-radius: 10px;
-          border: 1px solid var(--border-glass);
-          font-size: 0.8rem;
-          width: 200px;
+          background: #0B2046;
+          padding: 18px;
+          border-radius: 12px;
+          border: 1px solid var(--accent);
+          font-size: 0.85rem;
+          color: #fff;
+          width: 220px;
           opacity: 0;
           transform: translateY(10px);
           pointer-events: none;

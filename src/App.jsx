@@ -32,7 +32,7 @@ const navItems = [
   { id: 'topics', label: 'Topics', icon: BookOpen, component: TopicsView },
   { id: 'deadlines', label: 'Dates', icon: Calendar, component: DeadlinesView },
   { id: 'speakers', label: 'Speakers', icon: Mic2, component: SpeakersView },
-  { id: 'accepted', label: 'Accepted', icon: Award, component: AcceptedWorksView },
+  { id: 'accepted', label: 'Program', icon: Award, component: AcceptedWorksView },
   { id: 'submissions', label: 'Submissions', icon: FileEdit, component: SubmissionsView },
   { id: 'registration', label: 'Registration', icon: CreditCard, component: RegistrationView },
   { id: 'committees', label: 'Committees', icon: Users, component: CommitteesView },
@@ -64,7 +64,12 @@ function App() {
       <header className="main-header">
         <div className="nav-container container">
           <div className="branding">
-            <h1 className="logo">CWISCT<span className="accent">'26</span></h1>
+            <img 
+              src="/whitelogo.png" 
+              alt="CWISCT'26 Logo" 
+              className="navbar-logo" 
+              onClick={() => setActiveTab('home')}
+            />
             <div className="indexing-badges">
               <span className="badge-mini">Scopus</span>
               <span className="badge-mini">ACM</span>
@@ -166,7 +171,7 @@ function App() {
           <footer className="compact-footer">
             <div className="container footer-content">
               <div className="footer-left">
-                <span>Organized by <strong>TIM Laboratory</strong> & FSBM</span>
+                <span>Organized by <strong>LIAS & LTIM</strong> FSBM</span>
               </div>
               <div className="footer-right">
                 <div className="social-pill"><Globe size={14} /> cwisct2026.sciencesconf.org</div>

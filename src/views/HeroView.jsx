@@ -16,7 +16,7 @@ const HeroView = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="workshop-tag">2nd International Conference</div>
+            <div className="workshop-tag">3nd International Conference Edition</div>
             <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent">'26</span></h1>
             
             <p className="hero-intro">
@@ -136,6 +136,20 @@ const HeroView = () => {
           font-size: clamp(1.2rem, 3vw, 2rem);
           vertical-align: top;
           opacity: 0.4;
+        }
+
+        .edition-badge {
+          display: inline-block;
+          background: rgba(0, 229, 255, 0.1);
+          color: var(--accent);
+          padding: 6px 16px;
+          border-radius: 50px;
+          font-weight: 800;
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+          border: 1px solid rgba(0, 229, 255, 0.3);
+          box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
         }
 
         .hero-intro {
