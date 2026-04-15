@@ -174,7 +174,7 @@ function App() {
               </div>
               <div className="footer-right">
                 <div className="social-pill"><Globe size={14} /> <a href="mailto:icisctconf@gmail.com">icisctconf@gmail.com</a></div>
-                <div className="social-pill"><Award size={14} /> CMT Indexed</div>
+                
               </div>
             </div>
           </footer>
