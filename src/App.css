@@ -322,8 +322,8 @@
   overflow: hidden;
 }
 .sponsor-logo-box img {
-  max-height: 65%;
-  max-width: 90%;
+  max-height: 110%;
+  max-width: 100%;
   object-fit: contain;
   filter: brightness(0) invert(1) opacity(0.6);
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
