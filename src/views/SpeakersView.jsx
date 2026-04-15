@@ -7,7 +7,7 @@ const speakers = [
     firstName: "Tarek",
     role: "Associate Professor in Cyber Security, UK ",
     tags: ["Cybersecurity", "Scientist", "UK"],
-    image: "/Tarek Gaber.png",
+    image: "./Tarek Gaber.png",
     bio: "World’s Top 2% Scientist / Senior Lecturer (Associate Professor) in Cyber Security / Visiting Professor / Programme Leader / Award-Winner / Consultant / Academic Editor / UK Exceptional Talent in Cybersecurity / IEEE / FHEA. Springer Nature. "
   },
   {
@@ -15,7 +15,7 @@ const speakers = [
     firstName: "Jeannice",
     role: "PhD, MBA, CSM",
     tags: ["AI Governance", "Digital Risk Strategist","Entrepreneurship"],
-    image: "/Jeannice Fairrer Samani.png",
+    image: "./Jeannice Fairrer Samani.png",
     bio: "AI Governance & Digital Risk Strategist | Workforce Development | Venture Development | Transformative Leadership Architect | Board Advisor on AI Oversight & Systems Design | Entrepreneurship Educator"
   },
   {
@@ -23,7 +23,7 @@ const speakers = [
     firstName: "Az Eddine",
     role: "Engineer MBA USA Docteur Sorbonne, HDR France",
     tags: ["AI", "digital","Strategy","Blockchain"],
-    image: "/Az Eddine Bennani.png",
+    image: "./Az Eddine Bennani.png",
     bio: "50 years of experience in digital technologies, including AI. Consultant, Author, Speaker, Professor, Researcher, and Entrepreneur. Expertise in Management, Digital Governance, AI Transformation, Frugal AI, Strategy, Blockchain, and more."
   },
   {
@@ -31,7 +31,7 @@ const speakers = [
     firstName: "Soon",
     role: "Soon to be revealed",
     tags: ["Soon", "Soon"],
-    image: "/speaker_jean_patrice_1775942156643.png",
+    image: "./speaker_jean_patrice_1775942156643.png",
     bio: "Soon to be revealed"
   }
 ];

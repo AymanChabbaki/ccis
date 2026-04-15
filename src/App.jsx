@@ -65,7 +65,7 @@ function App() {
         <div className="nav-container container">
           <div className="branding">
             <img 
-              src="/whitelogo.png" 
+              src="./whitelogo.png" 
               alt="CWISCT'26 Logo" 
               className="navbar-logo" 
               onClick={() => setActiveTab('home')}
@@ -158,11 +158,11 @@ function App() {
               </div>
             </div>
             <div className="sponsors-grid">
-              <div className="sponsor-logo-box"><img src="/univh2clogo.png" alt="Hassan II University" /></div>
-              <div className="sponsor-logo-box"><img src="/fsbmlogo.png" alt="FSBM Casablanca" /></div>
-              <div className="sponsor-logo-box"><img src="/CNRSTlogo.png" alt="CNRST Morocco" /></div>
-              <div className="sponsor-logo-box"><img src="/liaslogo.png" alt="LIAS" /></div>
-              <div className="sponsor-logo-box"><img src="/ltimlogo.png" alt="LTIM" /></div>
+              <div className="sponsor-logo-box"><img src="./univh2clogo.png" alt="Hassan II University" /></div>
+              <div className="sponsor-logo-box"><img src="./fsbmlogo.png" alt="FSBM Casablanca" /></div>
+              <div className="sponsor-logo-box"><img src="./CNRSTlogo.png" alt="CNRST Morocco" /></div>
+              <div className="sponsor-logo-box"><img src="./liaslogo.png" alt="LIAS" /></div>
+              <div className="sponsor-logo-box"><img src="./ltimlogo.png" alt="LTIM" /></div>
             </div>
           </div>
           

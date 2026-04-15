@@ -129,14 +129,14 @@ const SubmissionsView = () => {
                   <FileCheck size={18} className="icon-blue" />
                   <div className="template-meta">
                     <span className="temp-name">ICISCT 2026 TEMPLATE</span>
-                    <a href="conference_template_letter.docx" download="ICISCT_2026_Template.docx" className="btn-download-mini">DOWNLOAD .DOCX</a>
+                    <a href="./conference_template_letter.docx" download="ICISCT_2026_Template.docx" className="btn-download-mini">DOWNLOAD .DOCX</a>
                   </div>
                 </div>
                 <div className="template-item">
                   <FileCheck size={18} className="icon-blue" />
                   <div className="template-meta">
                     <span className="temp-name">ICISCT 2026 TEMPLATE</span>
-                    <a href="conference_template_letter.tex" download="ICISCT_2026_Template.tex" className="btn-download-mini">DOWNLOAD .TEX</a>
+                    <a href="./conference_template_letter.tex" download="ICISCT_2026_Template.tex" className="btn-download-mini">DOWNLOAD .TEX</a>
                   </div>
                 </div>
               </div>
