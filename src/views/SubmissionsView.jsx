@@ -20,7 +20,8 @@ const SubmissionsView = () => {
         <div className="portal-header-hud">
           <div className="accent-line"></div>
           <h2>AUTHOR <span className="text-secondary">SUBMISSIONS</span></h2>
-          <p className="portal-sub">Call for Original Technical & Experimental Contributions</p>
+          <p className="portal-sub">ICISCT 2026 invites researchers, professors, doctors, and industry professionals to submit original and unpublished work addressing the challenges and opportunities of smart city technologies.
+            <br></br>For ICISCT 2026, authors are invited to submit an abstract only.</p>
         </div>
 
         <div className="submission-grid">

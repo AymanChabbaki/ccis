@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, ExternalLink, ArrowRight, PlayCircle } from 'lucide-react';
 
-const HeroView = () => {
+const HeroView = ({ setActiveTab }) => {
   return (
     <div className="hero-landing">
       <div className="hero-cinematic">
@@ -41,7 +41,7 @@ const HeroView = () => {
             </div>
 
             <div className="hero-cta-group">
-              <button className="btn-glow">Submit Abstract <ArrowRight size={18} /></button>
+              <button className="btn-glow" onClick={() => setActiveTab('submissions')}>Submit Abstract <ArrowRight size={18} /></button>
             </div>
           </motion.div>
 

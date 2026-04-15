@@ -144,7 +144,7 @@ function App() {
               transition={{ duration: 0.4 }}
               className="view-render-area"
             >
-              <ActiveComponent />
+              <ActiveComponent setActiveTab={setActiveTab} />
             </motion.div>
           </AnimatePresence>
 
