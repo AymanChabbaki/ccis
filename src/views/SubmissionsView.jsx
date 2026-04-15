@@ -32,7 +32,11 @@ const SubmissionsView = () => {
                 <FileEdit size={16} className="accent" />
                 <h3>SUBMISSION GUIDELINES</h3>
               </div>
-              <p>All abstracts must be submitted electronically via the Microsoft CMT platform: </p>
+              <section id="submission" className="submission-notice">
+                <p>Papers will be submitted through Microsoft CMT. The submission link will be available soon.</p>
+                <p>Authors must create a CMT account before submitting their papers.</p>
+                <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+              </section>
 
               <div className="easychair-cta">
                 <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noreferrer" className="btn-portal-primary">
@@ -184,6 +188,18 @@ const SubmissionsView = () => {
         }
         .strip-header h3 { font-size: 0.85rem; font-weight: 800; letter-spacing: 2px; color: #fff; margin: 0; }
 
+        .submission-notice {
+          margin-bottom: 25px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .submission-notice p {
+          font-size: 0.95rem;
+          color: var(--text-secondary);
+          line-height: 1.6;
+          margin: 0;
+        }
         .guidelines-strip { margin-bottom: 50px; }
         .easychair-cta { margin: 30px 0; }
         .btn-portal-primary {
