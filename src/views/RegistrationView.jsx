@@ -12,20 +12,19 @@ import {
 } from 'lucide-react';
 
 const feeData = [
-  { category: "MAGHREBIAN STUDENTS", fee: "0 MAD", type: "academic" },
-  { category: "MAGHREBIAN PARTICIPANTS", fee: "0 MAD", type: "academic" },
-  { category: "INTERNATIONAL STUDENTS", fee: "0 MAD", type: "global" },
-  { category: "INTERNATIONAL PARTICIPANTS", fee: "0 MAD", type: "global" },
-  { category: "LISTENER", fee: "0 MAD", type: "other" },
-  { category: "INNOVATIVE EXPERIENCE", fee: "0 MAD", type: "other" }
+  { category: "Professor / Researcher / Doctor", earlyBird: "[40 € / 400 MAD]", regular: "[40 € / 400 MAD]" },
+  { category: "PhD Student", earlyBird: "[30 € / 300 MAD]", regular: "[30 € / 300 MAD]" },
+  { category: "Industry Professional", earlyBird: "[50 € / 500 MAD]", regular: "[50 € / 500 MAD]" },
+  { category: "Attendee (no presentation)", earlyBird: "[20 € / 200 MAD]", regular: "[20 € / 200 MAD]" }
 ];
 
 const inclusions = [
-  "Workshop Kit & Documentation",
-  "Admission to All Opening Sessions",
-  "Admission to Communications & Technical Workshops",
-  "Daily Tea/Coffee Breaks & Gourmet Lunches",
-  "Scientific Proceedings Access"
+ 'Access to all conference sessions and keynotes (25–27 June 2026)',
+'Conference kit and Book of Abstracts',
+'Coffee breaks and lunches',
+'Welcome reception and gala dinner',
+'ertificate of attendance/presentation'
+
 ];
 
 const RegistrationView = () => {
@@ -36,7 +35,7 @@ const RegistrationView = () => {
         <div className="registration-header-hud">
           <div className="accent-line"></div>
           <h2>REGISTRATION <span className="text-secondary">& FEES</span></h2>
-          <p className="portal-sub">Strategic Admission for CWISCT'2026 Participants</p>
+          <p className="portal-sub">Strategic Admission for ICISCT'2026 Participants</p>
         </div>
 
         <div className="registration-grid">
@@ -48,13 +47,18 @@ const RegistrationView = () => {
             </div>
             
             <div className="fee-table-minimal">
+              <div className="fee-header-row">
+                <span className="col-cat">CATEGORY</span>
+                <span className="col-eb">EARLY-BIRD</span>
+                <span className="col-reg">REGULAR</span>
+              </div>
               {feeData.map((item, i) => (
                 <div key={i} className="fee-row">
-                  <div className="fee-meta">
+                  <div className="col-cat">
                     <span className="fee-category">{item.category}</span>
-                    <span className={`fee-badge ${item.type}`}>{item.type.toUpperCase()}</span>
                   </div>
-                  <div className="fee-amount">{item.fee}</div>
+                  <div className="col-eb">{item.earlyBird}</div>
+                  <div className="col-reg">{item.regular}</div>
                 </div>
               ))}
             </div>
@@ -71,6 +75,10 @@ const RegistrationView = () => {
                     <span>{text}</span>
                   </div>
                 ))}
+                <div className="policy-note">
+                <AlertCircle size={14} className="accent inc-item" />
+                <span>Note: Payment instructions: [To be added — bank transfer details, online payment link, etc.]</span>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +117,7 @@ const RegistrationView = () => {
 
               <div className="policy-note">
                 <Coffee size={14} />
-                <span>Note: The publication fees of best papers are fully supported by CWISCT'2026.</span>
+                <span>Note: The publication fees of best papers are fully supported by ICISCT'2026.</span>
               </div>
             </div>
           </div>
@@ -151,9 +159,21 @@ const RegistrationView = () => {
 
         /* Fee Table */
         .fee-table-minimal { display: flex; flex-direction: column; gap: 5px; }
+        
+        .fee-header-row {
+          display: grid;
+          grid-template-columns: 1.5fr 1fr 1fr;
+          padding: 12px 25px;
+          font-size: 0.65rem;
+          font-weight: 900;
+          letter-spacing: 1px;
+          opacity: 0.5;
+          text-transform: uppercase;
+        }
+
         .fee-row {
-          display: flex;
-          justify-content: space-between;
+          display: grid;
+          grid-template-columns: 1.5fr 1fr 1fr;
           align-items: center;
           padding: 18px 25px;
           background: rgba(255, 255, 255, 0.02);
@@ -161,12 +181,15 @@ const RegistrationView = () => {
           transition: 0.3s;
         }
         .fee-row:hover { background: rgba(0, 229, 255, 0.05); border-color: var(--accent); }
-        .fee-meta { display: flex; align-items: center; gap: 15px; }
-        .fee-category { font-weight: 700; font-size: 0.9rem; letter-spacing: 0.5px; }
-        .fee-badge { font-size: 0.55rem; font-weight: 900; padding: 2px 6px; border-radius: 4px; opacity: 0.6; }
-        .fee-badge.academic { background: var(--accent); color: var(--primary); opacity: 1; }
-        .fee-badge.global { background: #fff; color: var(--primary); opacity: 1; }
-        .fee-amount { font-weight: 800; color: var(--accent); font-size: 1.1rem; }
+        .fee-category { font-weight: 700; font-size: 0.85rem; letter-spacing: 0.5px; }
+        
+        .col-eb, .col-reg { 
+          font-weight: 800; 
+          color: var(--accent); 
+          font-size: 0.95rem;
+          text-align: right;
+        }
+        .col-reg { opacity: 0.9; }
 
         /* Inclusions */
         .inclusion-box { margin-top: 40px; padding: 25px; background: rgba(0, 229, 255, 0.03); border: 1px dashed var(--accent); }
@@ -191,13 +214,17 @@ const RegistrationView = () => {
         }
         @media (max-width: 360px) {
           .registration-header-hud { padding-left: 15px; border-left-width: 2px; }
+          .fee-header-row { display: none; }
           .fee-row {
+            display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 10px;
-            padding: 15px;
+            gap: 12px;
+            padding: 20px;
           }
-          .fee-meta { flex-direction: column; align-items: flex-start; gap: 5px; }
+          .col-eb, .col-reg { text-align: left; font-size: 0.85rem; }
+          .col-eb::before { content: "EARLY-BIRD: "; font-size: 0.6rem; opacity: 0.5; }
+          .col-reg::before { content: "REGULAR: "; font-size: 0.6rem; opacity: 0.5; }
           .registration-header-hud h2 { font-size: clamp(1.6rem, 5vw, 2rem); }
         }
       `}</style>

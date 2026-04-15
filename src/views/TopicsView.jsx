@@ -17,77 +17,68 @@ import {
 
 const tracks = [
   {
-    id: 'smart-systems',
-    title: 'Smart City Systems',
+    id: 'Smart City & Infrastructure',
+    title: 'Smart City Technologies and Digital Infrastructure',
     icon: Activity,
-    description: 'Developing the integrated ecosystem of modern urban living.',
+    description: 'Smart City Technologies and Digital Infrastructure: building the digital backbone of cities through advanced technologies, connected systems, and scalable infrastructure to enable efficient, data-driven urban services.',
     topics: [
-      'Smart banking & Fintech',
-      'Smart Healthcare & Biotech',
-      'Smart Home & IoT Automation',
-      'Smart University & Education',
-      'Smart Governance & Administration',
-      'Smart Energy & Environment',
-      'Smart Urbanism & Environment',
-      'Smart Citizens Engagement'
+      'Smart city platforms and architectures ',
+      'Intelligent urban systems ',
+      'IoT and sensor networks ',
+      'Cloud, edge and distributed systems for smart citie',
+      'Digital twins and cyber-physical urban systems'
     ]
   },
   {
-    id: 'mobility',
-    title: 'Transportation & Mobility',
+    id: 'AI & Data Analytics',
+    title: 'Artificial Intelligence and Data Analytics for Smart Cities',
     icon: Car,
-    description: 'Next-generation urban mobility and intelligent logistics.',
+    description: 'Artificial Intelligence and Data Analytics for Smart Cities: leveraging intelligent systems and data-driven insights to optimize urban infrastructure, enhance sustainability, and improve citizens’ quality of life.',
     topics: [
-      'Smart Transportation Systems',
-      'Smart Mobility Solutions',
-      'Smart City Planning',
-      'Smart Territorial Intelligence',
-      'Smart Management Systems',
-      'Intelligent Traffic Control'
+      'Machine learning and deep learning for urban applications',
+      'Data mining and knowledge discovery',
+      'Computer vision and intelligent monitoring',
+      'Decision support systems ',
+      'Urban data analytics and prediction '
     ]
   },
   {
-    id: 'it-computing',
-    title: 'IoT, Cloud & IT',
+    id: 'Mathematical Modelling',
+    title: 'Mathematical Modelling for Complex Urban Systems',
     icon: Cloud,
-    description: 'The computational backbone of connected environments.',
+    description: 'Mathematical Modelling for Complex Urban Systems: applying advanced mathematical frameworks to analyze, simulate, and optimize the dynamic interactions within modern urban environments.',
     topics: [
-      'IoT Based Developments',
-      'Mobile Computing & Devices',
-      'Testing & Evaluation Tools',
-      'Quality of Service (QoS)',
-      'Cloud Computing Techniques',
-      'Software for Smart Systems',
-      'Information & Computer Science'
+      'Mathematical modelling of urban systems ',
+      'Stochastic modelling and uncertainty analysis ',
+      'Optimization and operations research ',
+      'Simulation and forecasting ',
+      'Dynamic systems and probabilistic approaches '
     ]
   },
   {
-    id: 'data-security',
-    title: 'Data Science & Security',
+    id: 'Smart Mobility',
+    title: 'Smart Mobility, Energy and Sustainable Urban Services',
     icon: ShieldCheck,
-    description: 'Securing and processing huge volumes of urban information.',
+    description: 'Smart Mobility, Energy and Sustainable Urban Services: integrating intelligent transportation, efficient energy systems, and eco-friendly services to build resilient and sustainable cities.',
     topics: [
-      'Systems & Network Security',
-      'Big Data Architectures',
-      'Data Mining & Big Data',
-      'Natural Language Processing',
-      'Image, Video & Speech Processing',
-      'Social Networks & Computing',
-      'Digital Forensic Systems'
+      'Intelligent transportation systems ',
+      'Traffic modelling and mobility optimization ',
+      'Smart grids and energy management ',
+      'Environmental monitoring ',
+      'Sustainable and resilient urban services '
     ]
   },
   {
-    id: 'ai-algorithms',
-    title: 'AI & Advanced Algorithms',
+    id: 'Governance',
+    title: 'Governance, Security and Innovation in Smart Cities',
     icon: Cpu,
-    description: 'The intelligence layer driving smart decision making.',
+    description: 'Governance, Security and Innovation in Smart Cities: fostering effective policies, robust security frameworks, and cutting-edge innovations to ensure safe, efficient, and future-ready urban ecosystems.',
     topics: [
-      'Machine Learning & Deep Learning',
-      'Artificial Intelligence Models',
-      'Algorithms Optimization',
-      'Big Data Models & Algorithms',
-      'Big Data System Development',
-      'Deep Learning Applications'
+      'Smart governance and e-services ',
+      'Cybersecurity and privacy ',
+      'Risk analysis and resilience ',
+      'Innovation management in smart cities ',
+      'Policy, ethics and societal challenges'
     ]
   }
 ];
@@ -157,10 +148,6 @@ const TopicsView = () => {
                     <span>{item}</span>
                   </motion.div>
                 ))}
-              </div>
-
-              <div className="track-cta">
-                <button className="btn-hud">Download Track PDF</button>
               </div>
             </motion.div>
           </AnimatePresence>

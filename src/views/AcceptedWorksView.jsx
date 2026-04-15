@@ -35,13 +35,13 @@ const AcceptedWorksView = () => {
             <h2>ACCEPTED <span className="text-secondary">WORKS</span></h2>
             <div className="download-cta">
               <button className="btn-download-program">
-                <Download size={16} /> DOWNLOAD FULL PROGRAM (PDF)
+                <Download size={16} /> DOWNLOAD FULL PROGRAM (PDF) [available soon]
               </button>
             </div>
           </div>
         </div>
-
-        {/* Section: Posters */}
+{/*  
+       
         <div className="registry-section">
           <div className="section-title-row">
             <Presentation size={14} className="accent" />
@@ -71,7 +71,7 @@ const AcceptedWorksView = () => {
           </div>
         </div>
 
-        {/* Section: Experiences */}
+        
         <div className="registry-section">
           <div className="section-title-row">
             <FlaskConical size={14} className="accent" />
@@ -100,6 +100,7 @@ const AcceptedWorksView = () => {
             ))}
           </div>
         </div>
+        */}
       </div>
 
       <style jsx>{`

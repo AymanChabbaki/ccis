@@ -4,10 +4,10 @@ import { AlertCircle } from 'lucide-react';
 
 const NewsTicker = () => {
   const news = [
-    "Extended Deadline: May 18, 2020",
-    "Proceeding will be submitted to Scopus Indexed Library",
-    "Registration is now open for students and researchers",
-    "Best papers invited to IJWLTT Special Issue (IGI-Global)"
+    'Best contributions will be considered for publication',
+    'in the international scientific journal',
+    'Mathematical Modeling and Computing (MMC)',
+    'indexed on SCOPUS.'
   ];
 
   return (

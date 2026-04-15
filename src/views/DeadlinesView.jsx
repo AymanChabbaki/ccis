@@ -16,48 +16,91 @@ const phases = [
   {
     id: 'abstract',
     title: 'Submission',
-    date: 'May 18, 2020',
+    date: 'May 15, 2026',
     icon: Send,
-    status: 'completed',
-    description: 'Extended deadline for full paper abstract submissions.'
-  },
-  {
-    id: 'review',
-    title: 'Peer Review',
-    date: 'May 25, 2020',
-    icon: Compass,
-    status: 'completed',
-    description: 'Double-blind expert review and quality assessment.'
+    status: 'active',
+    description: 'Deadline for abstract submissions for ICISCT 2026.'
   },
   {
     id: 'accept',
     title: 'Acceptance',
-    date: 'June 01, 2020',
+    date: 'June 05, 2026',
     icon: Bell,
-    status: 'active',
-    description: 'Notification of acceptance and final program announcement.'
+    status: 'pending',
+    description: 'Notification of paper acceptance and expert feedback.'
   },
   {
-    id: 'camera-ready',
-    title: 'Publication',
-    date: 'June 10, 2020',
-    icon: FileText,
+    id: 'registration',
+    title: 'Registration',
+    date: 'June 15, 2026',
+    icon: Clock,
     status: 'pending',
-    description: 'Final camera-ready paper submission for indexation.'
+    description: 'Early-bird registration deadline for conference attendees.'
   },
   {
     id: 'event',
     title: 'Conference',
-    date: 'June 19-20, 2020',
+    date: 'June 25-27, 2026',
     icon: TrendingUp,
     status: 'pending',
-    description: 'Live workshop event and paper presentations.'
+    description: 'The 3rd International Conference on Innovative Smart City Technologies.'
   }
 ];
 
 const DeadlinesView = () => {
   const [timeLeft, setTimeLeft] = useState('2d 14h 25m');
   const activePhase = phases.find(p => p.status === 'active');
+
+  const handleSyncCalendar = () => {
+    const calendarEvents = phases.map(phase => {
+      // Simple logic to parse 2026 dates from the phase data
+      const year = '2026';
+      const monthMap = { May: '05', June: '06' };
+      const dateStr = phase.date;
+      const monthStr = dateStr.match(/(May|June)/)[0];
+      const month = monthMap[monthStr];
+      
+      let startDay, endDay;
+      if (dateStr.includes('-')) {
+        // Multi-day event (e.g., June 25-27)
+        const days = dateStr.match(/\d+/g);
+        startDay = days[0].padStart(2, '0');
+        // ICS end date is exclusive, so we add 1
+        endDay = (parseInt(days[1]) + 1).toString().padStart(2, '0');
+      } else {
+        // Single day event
+        startDay = dateStr.match(/\d+/)[0].padStart(2, '0');
+        endDay = (parseInt(startDay) + 1).toString().padStart(2, '0');
+      }
+
+      return [
+        'BEGIN:VEVENT',
+        `UID:${phase.id}-${year}@icisct.com`,
+        `DTSTAMP:${year}0101T000000Z`,
+        `DTSTART;VALUE=DATE:${year}${month}${startDay}`,
+        `DTEND;VALUE=DATE:${year}${month}${endDay}`,
+        `SUMMARY:ICISCT 2026 - ${phase.title}`,
+        `DESCRIPTION:${phase.description}`,
+        'END:VEVENT'
+      ].join('\r\n');
+    });
+
+    const icsContent = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//ICISCT//Conference Calendar//EN',
+      ...calendarEvents,
+      'END:VCALENDAR'
+    ].join('\r\n');
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.setAttribute('download', 'ICISCT_2026_Schedule.ics');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="container">
@@ -67,10 +110,10 @@ const DeadlinesView = () => {
         <div className="roadmap-header">
           <div className="progress-info">
             <TrendingUp size={16} className="icon-cyan" />
-            <span>MISSION PROGRESS: 60%</span>
+            <span>MISSION PROGRESS: 25%</span>
           </div>
           <div className="next-countdown">
-            <Clock size={16} /> NEXT: <span>{timeLeft}</span>
+            <Clock size={16} /> NEXT: <span>30 Days 12h</span>
           </div>
         </div>
 
@@ -80,7 +123,7 @@ const DeadlinesView = () => {
             <motion.div 
               className="track-progress-fill"
               initial={{ width: '0%' }}
-              animate={{ width: '60%' }}
+              animate={{ width: '25%' }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             />
           </div>
@@ -98,7 +141,7 @@ const DeadlinesView = () => {
                 <div className="node-circle-wrapper">
                   <div className="node-outline"></div>
                   <div className="node-core">
-                    <phase.icon size={28} />
+                    <phase.icon size={42} strokeWidth={2.5} />
                   </div>
                   {phase.status === 'completed' && (
                     <div className="node-status-badge">
@@ -138,12 +181,16 @@ const DeadlinesView = () => {
           <div className="hud-label">CURRENT MISSION PHASE</div>
           <div className="hud-grid">
             <div className="hud-main-info">
-              <h3>{activePhase.title} Notifcations</h3>
-              <p>Critical milestone for all contributing researchers. Stay tuned for expert feedback.</p>
+              <h3>{activePhase.title} Phase</h3>
+              <p>Current active window for ICISCT 2026 abstract submissions. Ensure your research contributes to the future of smart cities.</p>
             </div>
             <div className="hud-actions">
-              <button className="btn-roadmap">Sync to Calendar</button>
-              <button className="btn-roadmap outline">View Full Schedule</button>
+              <button 
+                className="btn-roadmap"
+                onClick={handleSyncCalendar}
+              >
+                Sync to Calendar
+              </button>
             </div>
           </div>
         </motion.div>
@@ -203,8 +250,8 @@ const DeadlinesView = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 20px;
-          width: 120px;
+          gap: 25px;
+          width: 180px;
           position: relative;
           cursor: pointer;
         }
@@ -212,17 +259,17 @@ const DeadlinesView = () => {
         /* Node Visuals */
         .node-circle-wrapper {
           position: relative;
-          width: 70px;
-          height: 70px;
+          width: 110px;
+          height: 110px;
           display: flex;
           align-items: center;
           justify-content: center;
         }
         .node-core {
-          width: 60px;
-          height: 60px;
+          width: 100px;
+          height: 100px;
           background: #050E1D;
-          border: 1px solid var(--border-glass);
+          border: 2px solid var(--border-glass);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -234,9 +281,9 @@ const DeadlinesView = () => {
         .node-outline {
           position: absolute;
           inset: 0;
-          border: 1px solid rgba(0, 229, 255, 0.2);
+          border: 2px solid rgba(0, 229, 255, 0.2);
           border-radius: 50%;
-          transform: scale(1.3);
+          transform: scale(1.2);
         }
         
         .completed .node-core { color: var(--accent); border-color: var(--accent); background: rgba(0, 229, 255, 0.05); }
@@ -269,10 +316,20 @@ const DeadlinesView = () => {
           text-align: center;
           display: flex;
           flex-direction: column;
-          gap: 5px;
+          gap: 8px;
         }
-        .phase-title { font-weight: 800; font-size: 0.95rem; color: #fff; }
-        .phase-date { font-weight: 600; font-size: 0.8rem; color: #fff; opacity: 0.9; }
+        .phase-title { 
+          font-weight: 900; 
+          font-size: 1.3rem; 
+          color: #fff;
+          text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .phase-date { 
+          font-weight: 700; 
+          font-size: 1.1rem; 
+          color: var(--accent); 
+          opacity: 1; 
+        }
 
         .node-details-pop {
           position: absolute;

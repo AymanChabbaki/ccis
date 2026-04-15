@@ -3,36 +3,36 @@ import { motion } from 'framer-motion';
 
 const speakers = [
   {
-    name: "Dr. Kaoutar EL MAGHRAOUI",
-    firstName: "Kaoutar",
-    role: "IBM T.J Watson Research Center, NY",
-    tags: ["Systems", "AI Hardware", "ML"],
-    image: "/speaker_kaoutar_1775942116678.png",
-    bio: "Principal research staff member at IBM. Leads the end-user AI testbed of the IBM Research AI Hardware Center. Specialist in Systems and AI intersection, OS performance, and scheduling."
+    name: "Pr. Tarek Gaber",
+    firstName: "Tarek",
+    role: "Associate Professor in Cyber Security, UK ",
+    tags: ["Cybersecurity", "Scientist", "UK"],
+    image: "/Tarek Gaber.png",
+    bio: "World’s Top 2% Scientist / Senior Lecturer (Associate Professor) in Cyber Security / Visiting Professor / Programme Leader / Award-Winner / Consultant / Academic Editor / UK Exceptional Talent in Cybersecurity / IEEE / FHEA. Springer Nature. "
   },
   {
-    name: "Mr. Mohamed Ali Habouha",
-    firstName: "Mohamed",
-    role: "Governor of Berkane Province",
-    tags: ["Smart City", "Innovation"],
-    image: "/speaker_mohamed_1775942132866.png",
-    bio: "Launched several smart and innovative projects for the benefit of the city of Berkane. Specialist in Public Policy and Urban Innovation."
+    name: "Dr. Jeannice Fairrer Samani",
+    firstName: "Jeannice",
+    role: "PhD, MBA, CSM",
+    tags: ["AI Governance", "Digital Risk Strategist","Entrepreneurship"],
+    image: "/Jeannice Fairrer Samani.png",
+    bio: "AI Governance & Digital Risk Strategist | Workforce Development | Venture Development | Transformative Leadership Architect | Board Advisor on AI Oversight & Systems Design | Entrepreneurship Educator"
   },
   {
-    name: "Dr. Latifa OUKHELLOU",
-    firstName: "Latifa",
-    role: "Research Director, IFSTTAR France",
-    tags: ["Mobility", "Data Mining"],
-    image: "/speaker_latifa_1775942144148.png",
-    bio: "Currently Research Director at the French Institute of Science and Technology for Transport. Expert in Spatio-temporal data mining for identifying driving behavior and urban mobility."
+    name: "Pr. Az Eddine Bennani",
+    firstName: "Az Eddine",
+    role: "Engineer MBA USA Docteur Sorbonne, HDR France",
+    tags: ["AI", "digital","Strategy","Blockchain"],
+    image: "/Az Eddine Bennani.png",
+    bio: "50 years of experience in digital technologies, including AI. Consultant, Author, Speaker, Professor, Researcher, and Entrepreneur. Expertise in Management, Digital Governance, AI Transformation, Frugal AI, Strategy, Blockchain, and more."
   },
   {
-    name: "Mr. Jean-Patrice GLAFKIDES",
-    firstName: "Jean-Patrice",
-    role: "Founder of DataValoris",
-    tags: ["Deep Learning", "Evolution"],
+    name: "Soon to be revealed",
+    firstName: "Soon",
+    role: "Soon to be revealed",
+    tags: ["Soon", "Soon"],
     image: "/speaker_jean_patrice_1775942156643.png",
-    bio: "Expert in automated deep learning model generation based on natural selection algorithms. Researcher at LIASD laboratory, Université Paris VIII."
+    bio: "Soon to be revealed"
   }
 ];
 

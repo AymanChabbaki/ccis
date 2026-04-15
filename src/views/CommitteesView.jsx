@@ -12,115 +12,77 @@ import {
 
 const organizingCommittee = [
   { group: "Honorary Chairs", members: [
-    { name: "Pr. Aawatif Hayar", role: "President of University Hassan II of Casablanca" },
-    { name: "Pr. Mohammed Talbi", role: "Dean of Faculty of Sciences Ben M'sick" }
+    { name: "Pr. Houssine Azeddoug", role: "President of Hassan II University of Casablanca" },
+    { name: "Pr. Abdeslam EL BOUARI", role: "Dean of Faculty of Sciences Ben M'sick" }
   ]},
   { group: "General Chair", members: [
-    { name: "Pr. Faouzia Benabbou", role: "FSBM, Casablanca Morocco" }
+        { name: "Pr. Nawal Sael", role: "FSBM, Casablanca Morocco" }
   ]},
   { group: "Co-Chair", members: [
-    { name: "Pr. Nawal Sael", role: "FSBM, Casablanca Morocco" }
-  ]},
-  { group: "Publication Chairs", members: [
-    { name: "Pr. Moussaid Laila", role: "ENSEM, Casablanca Morocco" },
-    { name: "Pr. Nawal Sael", role: "FSBM, Casablanca Morocco" },
     { name: "Pr. Faouzia Benabbou", role: "FSBM, Casablanca Morocco" }
   ]},
-  { group: "Sponsorship & Exhibits Chairs", members: [
-    { name: "Pr. Azouazi Mohamed", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Tragha Abderrahim", role: "FSBM, Casablanca Morocco" }
-  ]},
-  { group: "Poster Chairs", members: [
-    { name: "Pr. ElHabib Benlahmer", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Rachid Saadane", role: "EHTP, Casablanca Morocco" }
-  ]},
-  { group: "Registration Chairs", members: [
-    { name: "Pr. Abdessamad Belangour", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Sara Ouahabi", role: "FSBM, Casablanca Morocco" }
-  ]},
-  { group: "Web Chairs", members: [
-    { name: "Pr. Abdelaziz Marzak", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Said Nouh", role: "FSBM, Casablanca Morocco" }
-  ]},
-  { group: "Publicity & Communication Chairs", members: [
-    { name: "Pr. Elfilali Sanaa", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Achtaich Khadija", role: "FSBM, Casablanca Morocco" }
-  ]},
-  { group: "Speakers Session Chairs", members: [
-    { name: "Pr. Abdelwahed Namir", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Mansouri Khalifa", role: "ENSET Mohammadia" },
-    { name: "Pr. Elhoussine Labriji", role: "FSBM, Casablanca Morocco" },
-    { name: "Pr. Abderrahim Benihssane", role: "Faculty of Sciences El-jadida Morocco" }
-  ]},
-  { group: "Organizing Local Committee (Juniors)", members: [
-    { name: "Er-raji Naoufal", role: "FSBM, Casablanca Morocco" },
-    { name: "Nasser Zineb", role: "FSBM, Casablanca Morocco" },
-    { name: "Hamim Touria", role: "FSBM, Casablanca Morocco" },
-    { name: "Fagroud Fatima Zahra", role: "FSBM, Casablanca Morocco" },
-    { name: "Ait abdelouahid Rachida", role: "FSBM, Casablanca Morocco" },
-    { name: "Sagdali Imane", role: "FSBM, Casablanca Morocco" },
-    { name: "Nihal Elkhalidi", role: "FSBM, Casablanca Morocco" },
-    { name: "Soultana Abdelfettah", role: "FSBM, Casablanca Morocco" }
-  ]}
 ];
 
 const scientificCommittee = [
-  { name: "Pr. Sankar Sivarajah", role: "University of Bradford, UK" },
-  { name: "Pr. Victoria Hill", role: "Al Akhawayn University, Ifrane" },
-  { name: "Pr. Mirela Danubianu", role: "Roumanie" },
-  { name: "Pr. Abderrafiaa Koukam", role: "UTBM, France" },
-  { name: "Pr. Amal El Fallah Seghrouchni", role: "Sorbonne, France" },
-  { name: "Pr. Olivier Debauche", role: "University of Umons, Belgique" },
-  { name: "Pr. Hammou Fadili", role: "CNAM, France" },
-  { name: "Pr. Latifa Oukhellou", role: "IFSTTAR, France" },
-  { name: "Pr. Salah Aziz", role: "UQAM, Montréal - Canada" },
-  { name: "Pr. Saleem ullah", role: "IUB, Pakistan" },
-  { name: "Pr. Nuno Garcia", role: "UBI, Portugal" },
-  { name: "Pr. Nuno Pumbo", role: "UBI, Portugal" },
-  { name: "Pr. Sandeep Pirbhulal", role: "UBI, Portugal" },
-  { name: "Pr. Abdelaziz Marzak", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr Fatima Zahra Belouadha", role: "EMI, Rabat - Morocco" },
-  { name: "Pr. Rachida Ajhoun", role: "ENSIAS, Rabat - Morocco" },
-  { name: "Pr. Mounia ABIK", role: "ENSIAS, Rabat - Morocco" },
-  { name: "Pr. Driss Bouzidi", role: "ENSIAS, Rabat - Morocco" },
-  { name: "Pr. Abderrahim Beni-hssane", role: "FSCD, El Jadida" },
-  { name: "Pr. Zahi JARIR", role: "FS Semlalia, Marrakech" },
-  { name: "Pr. Fouzia Omary", role: "FSR, Rabat - Morocco" },
-  { name: "Pr. Abdellah Idrissi", role: "FSR, Rabat - Morocco" },
-  { name: "Pr. Med Chaouki Abou Naima", role: "FS My Ismail, Meknes" },
-  { name: "Pr. Samir Mbarki", role: "FS Ibn Tofail, Kenitra" },
-  { name: "Pr. Abdelalim Sadik", role: "FS Ibn Tofail, Kenitra" },
-  { name: "Pr. Mohammed Mourchid", role: "FS Ibn Tofail, Kenitra" },
-  { name: "Pr. Laila Moussaid", role: "ENSEM, Casablanca Morocco" },
-  { name: "Pr. Hicham Behja", role: "ENSEM, Casablanca Morocco" },
-  { name: "Pr. Hain Mustapha", role: "ENSAM, Casablanca Morocco" },
-  { name: "Pr. Rachid Saadane", role: "EHTT, Casablanca Morocco" },
-  { name: "Pr. Khadija Douzi", role: "FST, Casablanca Morocco" },
-  { name: "Pr. Khalid Moussaid", role: "FS Ain chock, Casablanca" },
-  { name: "Pr. Noreddine Abghour", role: "FS Ain chock, Casablanca" },
-  { name: "Pr. Said Nouh", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Khadija Sabiri", role: "UBI, Portugal" },
-  { name: "Pr. Noura Yousfi", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. El Houssine Labriji", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Faouzia Benabbou", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Abdelwahad Namir", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Abderrahim Tragha", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Issam Atouf", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Mostafa Hanoune", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Mohamed Azzouazi", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. EL Habib Benlahmar", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Nawal Sael", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Sanaa Elfilali", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Abdessamad Belangour", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Fadoua Ghanimi", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Ahmed Eddaoui", role: "FSBM, Casablanca Morocco" },
-  { name: "Pr. Mohammed Saber", role: "ENSAO, Oujda Morocco" },
-  { name: "Pr. Mostafa Azizi", role: "ESTO, Oujda Morocco" },
-  { name: "Pr. Ahmed zellou", role: "ENSIAS, Rabat Morocco" },
-  { name: "Pr. Fadoua Ataa allah", role: "IRCAM, Rabat" },
-  { name: "Pr. Salem Nafiri", role: "EHTP, Casablanca" },
-  { name: "Pr. Anass Rghioui", role: "EHTP, Casablanca" },
-  { name: "Pr. Hassania MESDOUAD", role: "EHTP, Casablanca" }
+ { name: "Pr. Aamre Khalil", role: "Univ-Lorraine France" },
+ { name: "Pr. Achtaich Khadija", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. AHARRANE Nabil", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Ait Abdelouahid Rachida", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Ait Daoud Mohammed", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Aouhassi Sarah", role: "ENSAM-UNIVH2C Morocco" },
+ { name: "Pr. Ardchird Soufiane", role: "ENCG-UNIVH2C Morocco" },
+ { name: "Pr. Arezki Sara", role: "FST-UNIVH1 Morocco" },
+ { name: "Pr. Azzouazi Mohamed", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Banane Mouad", role: "FSJES-UNIVH2C Morocco" },
+ { name: "Pr. Behja Hicham", role: "ENSEM-UNIVH2C Morocco" },
+ { name: "Pr. Belangour Abdessamad", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Ben Lahmar El Habib", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Benabbou Faouzia", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Bentaib Mouhcine", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Bouhsissin Soukaina", role: "ENSAM-UNIVH2C Morocco" },
+ { name: "Pr. Chbihi louhdi Mohammed Reda", role: "FSAC-UNIVH2C Morocco" },
+ { name: "Pr. Chemlal Yman", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Daif Abderrahmane", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Dandache Abbas", role: "Univ-Lorraine France" },
+ { name: "Pr. Demraoui Lamiae", role: "FEG-USMS Morocco" },
+ { name: "Pr. El Filali Sanaa", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. El ghoumari Mohammed YASSINE", role: "ENCG-UNIVH2C Morocco" },
+ { name: "Pr. Elazzaby Fouzia", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Elguemmat Kamal", role: "ENSET-UNIVH2C Morocco" },
+ { name: "Pr. Ellaky Zineb", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Erraissi Allae", role: "FPSB-UNIVCD Morocco" },
+ { name: "Pr. Ettaoufik abdelaziz", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Ghanimi Fadoua", role: "ENSC-UNIVIT Morocco" },
+ { name: "Pr. Ghazouani Mohamed", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Hain Mustapha", role: "ENSAM-UNIVH2C Morocco" },
+ { name: "Pr. Hanoune Mostafa", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Hattaf Khalid", role: "CRMEF of Casablanca Morocco" },
+ { name: "Pr. Laaz Naziha", role: "EHTP-UNIVH2C Morocco" },
+ { name: "Pr. Lmati Imane", role: "FST-UNIVH1 Morocco" },
+ { name: "Pr. Mansouri Khalifa", role: "ENSET-UNIVH2C Morocco" },
+ { name: "Pr. Marzak Abdelaziz", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Marzouk Soukaina", role: "FPSB-UNIVCD Morocco" },
+ { name: "Pr. Matrane Yassir", role: "ENSAM-UNIVH2C Morocco" },
+ { name: "Pr. Moutachaouik Hicham", role: "ENSAM-UNIVH2C Morocco" },
+ { name: "Pr. Namir Abdelwahed", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Nassar Mahmoud", role: "ENSIAS-UNIVM5 Morocco" },
+ { name: "Pr. Nouh Said", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Omary Fouzia", role: "FSR-UNIVMD5 Morocco" },
+ { name: "Pr. Ouahabi Sara", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Ouchra Hafsa", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Ounacer Soumaya", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Rghioui Anass", role: "EHTP-UNIVH2C Morocco" },
+ { name: "Pr. Rochd Yassir", role: "ENSA-UNIVH1 Morocco" },
+ { name: "Pr. Sadik Mounir", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Sael Nawal", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Sbai Hanae", role: "FSTM-UNIVH2C Morocco" },
+ { name: "Pr. Sekhara Youssef", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Silkan Hassan", role: "FSJ-UNIVCD Morocco" },
+ { name: "Pr. Tragha Abderrahim", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Yousfi Noura", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Zahour Omar", role: "FSBM-UNIVH2C Morocco" },
+ { name: "Pr. Zakrani Abdelali", role: "ENSAM-UNIVH2C Morocco" },
+ { name: "Pr. Mokhliss Ghizlane", role: "ENS-UNIVH2C Morocco" },
 ];
 
 const CommitteesView = () => {

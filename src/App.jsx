@@ -71,8 +71,7 @@ function App() {
               onClick={() => setActiveTab('home')}
             />
             <div className="indexing-badges">
-              <span className="badge-mini">Scopus</span>
-              <span className="badge-mini">ACM</span>
+             
             </div>
           </div>
 
@@ -159,11 +158,11 @@ function App() {
               </div>
             </div>
             <div className="sponsors-grid">
-              <div className="sponsor-logo-box"><span>Hassan II University</span></div>
-              <div className="sponsor-logo-box"><span>FSBM Casablanca</span></div>
-              <div className="sponsor-logo-box"><span>CNRST Morocco</span></div>
-              <div className="sponsor-logo-box"><span>IEEE Africa</span></div>
-              <div className="sponsor-logo-box"><span>ACM Morocco</span></div>
+              <div className="sponsor-logo-box"><img src="/univh2clogo.png" alt="Hassan II University" /></div>
+              <div className="sponsor-logo-box"><img src="/fsbmlogo.png" alt="FSBM Casablanca" /></div>
+              <div className="sponsor-logo-box"><img src="/CNRSTlogo.png" alt="CNRST Morocco" /></div>
+              <div className="sponsor-logo-box"><img src="/liassponsor.png" alt="LAMS" /></div>
+              <div className="sponsor-logo-box"><img src="/ltimlogo.png" alt="LTIM" /></div>
             </div>
           </div>
           
@@ -174,8 +173,8 @@ function App() {
                 <span>Organized by <strong>LIAS & LTIM</strong> FSBM</span>
               </div>
               <div className="footer-right">
-                <div className="social-pill"><Globe size={14} /> cwisct2026.sciencesconf.org</div>
-                <div className="social-pill"><Award size={14} /> Scopus Indexed</div>
+                <div className="social-pill"><Globe size={14} /> <a href="mailto:icisctconf@gmail.com">icisctconf@gmail.com</a></div>
+                <div className="social-pill"><Award size={14} /> CMT Indexed</div>
               </div>
             </div>
           </footer>

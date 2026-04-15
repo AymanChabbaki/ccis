@@ -8,19 +8,19 @@ const HeroView = () => {
       <div className="hero-cinematic">
         <div className="hero-bg-overlay"></div>
         <img src="/hero.png" alt="Smart City Future" className="hero-main-img" />
-        
+
         <div className="hero-content-wrapper container">
-          <motion.div 
+          <motion.div
             className="hero-main-text"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="workshop-tag">3nd International Conference Edition</div>
-            <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent">'26</span></h1>
-            
+            <div className="workshop-tag"></div>
+            <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent"> ICISCT '26</span></h1>
+
             <p className="hero-intro">
-              Bridging the gap between Urban Infrastructure and Artificial Intelligence to build the sustainable cities of tomorrow.
+              Welcome to ICISCT 2026, the third edition of the International Conference on Innovative Smart City Technologies. Hosted by the Faculty of Sciences Ben M'Sick in Casablanca, ICISCT 2026 brings together researchers, professors, doctors, industry experts, and policymakers from around the world to share the latest advances shaping the smart cities of tomorrow.
             </p>
 
             <div className="hero-meta-grid">
@@ -28,25 +28,24 @@ const HeroView = () => {
                 <Calendar size={18} className="icon-cyan" />
                 <div className="meta-text">
                   <span className="label">DATE</span>
-                  <span className="value">June 19-20, 2020</span>
+                  <span className="value">June 25-27, 2026</span>
                 </div>
               </div>
               <div className="meta-block">
                 <MapPin size={18} className="icon-cyan" />
                 <div className="meta-text">
                   <span className="label">LOCATION</span>
-                  <span className="value">Casablanca, Morocco</span>
+                  <span className="value">FSBM, Casablanca, Morocco</span>
                 </div>
               </div>
             </div>
 
             <div className="hero-cta-group">
               <button className="btn-glow">Submit Abstract <ArrowRight size={18} /></button>
-              <button className="btn-ghost"><PlayCircle size={18} /> Watch Teaser</button>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="hero-stats-panel"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -153,10 +152,10 @@ const HeroView = () => {
         }
 
         .hero-intro {
-          font-size: clamp(1rem, 1.5vw, 1.25rem);
+          font-size: clamp(0.1rem, 1.5vw, 1.25rem);
           color: var(--text-secondary);
           margin-bottom: 40px;
-          line-height: 1.6;
+          line-height: 1.4;
           max-width: 60ch;
         }
 

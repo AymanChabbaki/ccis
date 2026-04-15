@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FileEdit, 
-  ExternalLink, 
-  Download, 
-  CheckCircle2, 
-  ListOrdered, 
+import {
+  FileEdit,
+  ExternalLink,
+  Download,
+  CheckCircle2,
+  ListOrdered,
+  AlertCircle,
   Layers,
   FileCheck,
   AlertTriangle
@@ -30,27 +31,51 @@ const SubmissionsView = () => {
                 <FileEdit size={16} className="accent" />
                 <h3>SUBMISSION GUIDELINES</h3>
               </div>
-              <p>We are pleased to invite you to submit original contributions to CWISCT'2026 via the official EasyChair system.</p>
-              
+              <p>All abstracts must be submitted electronically via the Microsoft CMT platform: </p>
+
               <div className="easychair-cta">
-                <a href="https://easychair.org/conferences/?conf=wisct2020" target="_blank" rel="noreferrer" className="btn-portal-primary">
-                  <ExternalLink size={16} /> ACCESS EASYCHAIR PORTAL
+                <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noreferrer" className="btn-portal-primary">
+                  <ExternalLink size={16} /> ACCESS CMT PORTAL
                 </a>
               </div>
 
               <div className="rules-list">
                 <div className="rule-item">
                   <CheckCircle2 size={16} className="accent" />
-                  <span>Submissions must not have been previously published or under consideration elsewhere.</span>
+                  <span>1.	Create a free account on Microsoft CMT (or log in if you already have one).
+                  </span>
                 </div>
                 <div className="rule-item">
                   <CheckCircle2 size={16} className="accent" />
-                  <span>Peer-reviewed based on relevance, originality, and clarity.</span>
+                  <span>2.	Search for "ICISCT 2026" in the conference list.</span>
+                </div>
+                <div className="rule-item">
+                  <CheckCircle2 size={16} />
+                  <span>3.  Click "Create new submission."</span>
+                </div>
+                <div className="rule-item">
+                  <CheckCircle2 size={16} />
+                  <span>4.  Fill in the title, authors, affiliations, and select the relevant track/topic.</span>
+                </div>
+                <div className="rule-item">
+                  <CheckCircle2 size={16} />
+                  <span>5.  Upload your abstract (PDF) prepared using the official template.</span>
+                </div>
+                <div className="rule-item">
+                  <CheckCircle2 size={16} />
+                  <span>6.  Confirm your submission before the deadline.</span>
                 </div>
                 <div className="rule-item warning">
                   <AlertTriangle size={16} />
-                  <span>Any submission violating guidelines will be eliminated from the review process.</span>
+                  <span>For any technical issue with CMT, please contact: [icisctconf@gmail.com]</span>
                 </div>
+                <div className="policy-note">
+                  <AlertCircle size={14} className="accent inc-item" />
+                  <span>Authors of selected best contributions will be invited to submit an extended full-paper version of their work, which after an additional peer-review process Best papers will be considered for publication in the international scientific journal Mathematical Modeling and Computing (MMC).
+                    All accepted abstracts will be included in the official ICISCT 2026 Book of Abstracts.
+                  </span>
+                </div>
+
               </div>
             </div>
 
@@ -85,10 +110,12 @@ const SubmissionsView = () => {
                 <h3>SUBMISSION TYPES</h3>
               </div>
               <ul className="type-list">
-                <li><span className="type-dot"></span> REGULAR PAPERS (4 - 6 Pages)</li>
-                <li><span className="type-dot"></span> SHORT PAPERS (2 - 4 Pages)</li>
-                <li><span className="type-dot"></span> POSTERS & DEMOS</li>
-              </ul>
+                <li><span className="type-dot"></span>Language: English</li>
+                <li><span className="type-dot"></span>Length: 250–500 words</li>
+                <li><span className="type-dot"></span>Include: title, authors, affiliations, abstract body, keywords</li>
+                <li><span className="type-dot"></span>File type for submission: PDF</li>
+              </ul><br />
+              <p>Authors of selected best abstracts will later receive the full-paper template for the Mathematical Modeling and Computing journal submission.</p>
             </div>
 
             <div className="sidebar-section highlight">
@@ -100,15 +127,15 @@ const SubmissionsView = () => {
                 <div className="template-item">
                   <FileCheck size={18} className="icon-blue" />
                   <div className="template-meta">
-                    <span className="temp-name">IEEE A4 TEMPLATE</span>
-                    <a href="#" className="btn-download-mini">DOWNLOAD .DOCX</a>
+                    <span className="temp-name">ICISCT 2026  TEMPLATE</span>
+                    <a href="conference_template_letter.docx" className="btn-download-mini">DOWNLOAD .DOCX</a>
                   </div>
                 </div>
                 <div className="template-item">
                   <FileCheck size={18} className="icon-blue" />
                   <div className="template-meta">
-                    <span className="temp-name">EXPERIENCE TEMPLATE</span>
-                    <a href="#" className="btn-download-mini">DOWNLOAD .DOCX</a>
+                    <span className="temp-name">ICISCT 2026 TEMPLATE</span>
+                    <a href="conference_template_letter.tex" className="btn-download-mini">DOWNLOAD .TEX</a>
                   </div>
                 </div>
               </div>
@@ -140,7 +167,12 @@ const SubmissionsView = () => {
           gap: 60px;
           margin-bottom: 60px;
         }
-
+        .policy-note {
+          display: flex; align-items: center; gap: 10px;
+          padding: 15px; background: rgba(255,255,255,0.05);
+          font-size: 0.75rem; font-weight: 700; color: var(--accent);
+          margin-top: 15px; border-radius: 4px;
+        }
         .strip-header {
           display: flex;
           align-items: center;

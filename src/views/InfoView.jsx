@@ -84,11 +84,8 @@ const InfoView = () => {
                   <span>DIRECT CONTACT</span>
                 </div>
                 <div className="contact-grid">
-                  <a href="mailto:cwisct2026@gmail.com" className="contact-link">
-                    <Mail size={14} /> cwisct2026@gmail.com
-                  </a>
-                  <a href="tel:+212522704671" className="contact-link">
-                    <Phone size={14} /> +212 (0) 522 70 46 71
+                  <a href="mailto:icisctconf@gmail.com" className="contact-link">
+                    <Mail size={14} /> icisctconf@gmail.com
                   </a>
                 </div>
               </div>
