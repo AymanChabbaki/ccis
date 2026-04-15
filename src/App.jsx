@@ -161,7 +161,7 @@ function App() {
               <div className="sponsor-logo-box"><img src="/univh2clogo.png" alt="Hassan II University" /></div>
               <div className="sponsor-logo-box"><img src="/fsbmlogo.png" alt="FSBM Casablanca" /></div>
               <div className="sponsor-logo-box"><img src="/CNRSTlogo.png" alt="CNRST Morocco" /></div>
-              <div className="sponsor-logo-box"><img src="/liassponsor.png" alt="LAMS" /></div>
+              <div className="sponsor-logo-box"><img src="/liaslogo.png" alt="LIAS" /></div>
               <div className="sponsor-logo-box"><img src="/ltimlogo.png" alt="LTIM" /></div>
             </div>
           </div>

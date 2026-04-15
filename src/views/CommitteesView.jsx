@@ -15,7 +15,7 @@ const organizingCommittee = [
     { name: "Pr. Houssine Azeddoug", role: "President of Hassan II University of Casablanca" },
     { name: "Pr. Abdeslam EL BOUARI", role: "Dean of Faculty of Sciences Ben M'sick" }
   ]},
-  { group: "General Chair", members: [
+  { group: "Chair", members: [
         { name: "Pr. Nawal Sael", role: "FSBM, Casablanca Morocco" }
   ]},
   { group: "Co-Chair", members: [

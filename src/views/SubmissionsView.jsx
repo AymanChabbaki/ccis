@@ -67,7 +67,7 @@ const SubmissionsView = () => {
                 </div>
                 <div className="rule-item warning">
                   <AlertTriangle size={16} />
-                  <span>For any technical issue with CMT, please contact: [icisctconf@gmail.com]</span>
+                  <span>For any technical issue with CMT, please contact: <a href='mailto:icisctconf@gmail.com' className='text-yellow-500'>icisctconf@gmail.com</a></span>
                 </div>
                 <div className="policy-note">
                   <AlertCircle size={14} className="accent inc-item" />
