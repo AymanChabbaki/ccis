@@ -101,7 +101,7 @@ const InfoView = () => {
           >
             <div className="map-frame">
               <img 
-                src="./casablanca_venue_map_hud_1775943362463.png" 
+                src="/casablanca_venue_map_hud_1775943362463.png" 
                 alt="Venur Map" 
                 className="map-visual"
               />
