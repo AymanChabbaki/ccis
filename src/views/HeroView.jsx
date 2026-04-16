@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, ExternalLink, ArrowRight, PlayCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Calendar, MapPin, ExternalLink, ArrowRight, PlayCircle, FileText } from 'lucide-react';
 
-const HeroView = ({ setActiveTab }) => {
+const HeroView = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-landing">
       <div className="hero-cinematic">
@@ -19,9 +21,11 @@ const HeroView = ({ setActiveTab }) => {
             <div className="workshop-tag"></div>
             <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent"> ICISCT '26</span></h1>
 
-            <p className="hero-intro">
-              Welcome to ICISCT 2026, the third edition of the International Conference on Innovative Smart City Technologies. Hosted by the Faculty of Sciences Ben M'Sick in Casablanca, ICISCT 2026 brings together researchers, professors, doctors, industry experts, and policymakers from around the world to share the latest advances shaping the smart cities of tomorrow.
-            </p>
+            <div className="hero-intro">
+              <p>Welcome to the International Conference on Innovative Smart City Technologies (ICISCT 2026), hosted by the Faculty of Sciences Ben M’Sik in Casablanca.</p>
+              <p>The conference brings together researchers, academics, industry experts, and policymakers from around the world to explore the latest advances shaping the smart cities of tomorrow.</p>
+              <p>The program covers key areas such as artificial intelligence, IoT, sustainable urban systems, cybersecurity, and digital transformation, providing a dynamic platform for exchanging ideas, fostering collaboration, and promoting innovative solutions for smarter, greener, and more inclusive urban environments.</p>
+            </div>
 
             <div className="hero-meta-grid">
               <div className="meta-block">
@@ -40,8 +44,30 @@ const HeroView = ({ setActiveTab }) => {
               </div>
             </div>
 
+            <div className="editions-showcase">
+              <span className="editions-tag">PREVIOUS EDITIONS</span>
+              <div className="editions-grid">
+                <a href="https://www.igi-global.com/journals/" target="_blank" rel="noreferrer" className="edition-tile">
+                  <div className="tile-icon"><FileText size={20} /></div>
+                  <div className="tile-content">
+                    <span className="tile-title">BEST PAPERS 2020</span>
+                    <span className="tile-desc">Published via IGI Global</span>
+                  </div>
+                  <ExternalLink size={14} className="tile-arrow" />
+                </a>
+                <a href="https://wisct2020.sciencesconf.org/index.html" target="_blank" rel="noreferrer" className="edition-tile">
+                  <div className="tile-icon"><PlayCircle size={20} /></div>
+                  <div className="tile-content">
+                    <span className="tile-title">WISCT 2020 ARCHIVE</span>
+                    <span className="tile-desc">Official Edition Site</span>
+                  </div>
+                  <ExternalLink size={14} className="tile-arrow" />
+                </a>
+              </div>
+            </div>
+
             <div className="hero-cta-group">
-              <button className="btn-glow" onClick={() => setActiveTab('submissions')}>Submit Abstract <ArrowRight size={18} /></button>
+              <button className="btn-glow" onClick={() => navigate('/submissions')}>Submit Abstract <ArrowRight size={18} /></button>
             </div>
           </motion.div>
 
@@ -152,17 +178,132 @@ const HeroView = ({ setActiveTab }) => {
         }
 
         .hero-intro {
-          font-size: clamp(0.1rem, 1.5vw, 1.25rem);
+          font-size: clamp(0.9rem, 1.5vw, 1.1rem);
           color: var(--text-secondary);
-          margin-bottom: 40px;
-          line-height: 1.4;
-          max-width: 60ch;
+          margin-bottom: 30px;
+          line-height: 1.6;
+          max-width: 70ch;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .hero-intro p {
+          margin: 0;
         }
 
         .hero-meta-grid {
           display: flex;
           gap: 40px;
-          margin-bottom: 50px;
+          margin-bottom: 35px;
+        }
+
+        .editions-showcase {
+          margin-bottom: 45px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .editions-tag {
+          font-size: 0.65rem;
+          font-weight: 800;
+          color: var(--accent);
+          letter-spacing: 2px;
+          opacity: 0.7;
+        }
+
+        .editions-grid {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        .edition-tile {
+          flex: 1;
+          min-width: 260px;
+          background: rgba(255, 255, 255, 0.03);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          padding: 18px 22px;
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          text-decoration: none;
+          transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .edition-tile::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(45deg, transparent, rgba(0, 229, 255, 0.05), transparent);
+          transform: translateX(-100%);
+          transition: 0.6s;
+        }
+
+        .edition-tile:hover {
+          transform: translateY(-5px) scale(1.02);
+          background: rgba(255, 255, 255, 0.06);
+          border-color: var(--accent);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 229, 255, 0.1);
+        }
+
+        .edition-tile:hover::before {
+          transform: translateX(100%);
+        }
+
+        .tile-icon {
+          width: 44px;
+          height: 44px;
+          background: rgba(0, 229, 255, 0.1);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--accent);
+          transition: 0.3s;
+        }
+
+        .edition-tile:hover .tile-icon {
+          background: var(--accent);
+          color: var(--primary);
+          box-shadow: 0 0 15px var(--accent);
+        }
+
+        .tile-content {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          flex: 1;
+        }
+
+        .tile-title {
+          font-size: 0.85rem;
+          font-weight: 800;
+          color: #fff;
+          letter-spacing: 0.5px;
+        }
+
+        .tile-desc {
+          font-size: 0.75rem;
+          color: var(--text-secondary);
+          opacity: 0.8;
+        }
+
+        .tile-arrow {
+          color: var(--text-secondary);
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+
+        .edition-tile:hover .tile-arrow {
+          transform: translate(3px, -3px);
+          color: var(--accent);
+          opacity: 1;
         }
 
         .meta-block {

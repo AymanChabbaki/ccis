@@ -4,7 +4,9 @@
   min-height: 100vh;
   background: var(--bg-dark);
 }
-
+#filter{
+  filter: none;
+}
 /* Header Styling */
 .main-header {
   position: sticky;
