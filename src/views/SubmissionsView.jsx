@@ -34,8 +34,7 @@ const SubmissionsView = () => {
               </div>
               <section id="submission" className="submission-notice">
                 <p>Papers must be submitted through the Microsoft CMT portal. Click the button below to access the submission system.</p>
-                <p>Authors must create a CMT account before submitting their papers if they do not already have one.</p>
-                <p>The Microsoft CMT service is used for managing the peer-reviewing process for this conference. This service is provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+                <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
               </section>
 
               <div className="easychair-cta">

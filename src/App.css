@@ -189,7 +189,15 @@
   align-items: center;
 }
 
-.footer-left { font-size: 0.85rem; color: var(--text-secondary); }
+.footer-left { font-size: 0.85rem; color: var(--text-secondary); flex: 1; }
+.cmt-ack { 
+  font-size: 0.7rem; 
+  line-height: 1.5; 
+  max-width: 600px; 
+  opacity: 0.8; 
+  margin: 0; 
+  letter-spacing: 0.2px;
+}
 
 .footer-right {
   display: flex;

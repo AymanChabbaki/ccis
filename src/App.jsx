@@ -187,10 +187,11 @@ function App() {
           {/* Scientific Impact Footer */}
           <footer className="compact-footer">
             <div className="container footer-content">
-              
+              <div className="footer-left">
+                <p className="cmt-ack">The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
+              </div>
               <div className="footer-right">
                 <div className="social-pill"><Globe size={14} /> <a href="mailto:icisctconf@gmail.com">icisctconf@gmail.com</a></div>
-                
               </div>
             </div>
           </footer>
