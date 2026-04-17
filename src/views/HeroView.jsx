@@ -20,7 +20,7 @@ const HeroView = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="workshop-tag"></div>
-            <h1>TEST INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent"> ICISCT '26</span></h1>
+            <h1>INNOVATIVE <br /><span className="glow-text">SMART CITY</span> <br />TECHNOLOGIES <span className="year-accent"> ICISCT '26</span></h1>
 
             <div className="hero-intro">
               <p>Welcome to the International Conference on Innovative Smart City Technologies (ICISCT 2026), hosted by the Faculty of Sciences Ben M’Sik in Casablanca.</p>
