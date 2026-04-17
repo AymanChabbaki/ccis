@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 
 const InfoView = () => {
+  const ASSET_BASE = window.location.pathname.startsWith('/icisct') ? '/icisct/' : '/';
   return (
     <div className="container">
       <div className="venue-discovery-portal">
@@ -101,7 +102,7 @@ const InfoView = () => {
           >
             <div className="map-frame">
               <img 
-                src="/casablanca_venue_map_hud_1775943362463.png" 
+                src={`${ASSET_BASE}casablanca_venue_map_hud_1775943362463.png`} 
                 alt="Venur Map" 
                 className="map-visual"
               />

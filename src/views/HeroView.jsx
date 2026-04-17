@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import { Calendar, MapPin, ExternalLink, ArrowRight, PlayCircle, FileText } from 'lucide-react';
 
 const HeroView = () => {
+  const ASSET_BASE = window.location.pathname.startsWith('/icisct') ? '/icisct/' : '/';
   const navigate = useNavigate();
   return (
     <div className="hero-landing">
       <div className="hero-cinematic">
         <div className="hero-bg-overlay"></div>
-        <img src="/hero.png" alt="Smart City Future" className="hero-main-img" />
+        <img src={`${ASSET_BASE}hero.png`} alt="Smart City Future" className="hero-main-img" />
 
         <div className="hero-content-wrapper container">
           <motion.div

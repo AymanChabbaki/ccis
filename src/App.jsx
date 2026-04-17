@@ -41,6 +41,7 @@ const navItems = [
 ];
 
 function App() {
+  const ASSET_BASE = window.location.pathname.startsWith('/icisct') ? '/icisct/' : '/';
   const navigate = useNavigate();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,7 +69,7 @@ function App() {
         <div className="nav-container container">
           <div className="branding">
             <img 
-              src="/whitelogo.png" 
+              src={`${ASSET_BASE}whitelogo.png`} 
               alt="CWISCT'26 Logo" 
               className="navbar-logo" 
               onClick={() => navigate('/')}
@@ -171,14 +172,14 @@ function App() {
               </div>
             </div>
             <div className="sponsors-grid">
-              <div className="sponsor-logo-box"><img src="/univh2clogo.png" alt="Hassan II University" /></div>
-              <div className="sponsor-logo-box"><img src="/fsbmlogo.png" alt="FSBM Casablanca" /></div>
-              <div className="sponsor-logo-box"><img src="/CNRSTlogo.png" alt="CNRST Morocco" /></div>
-              <div className="sponsor-logo-box"><img src="/liaslogo.png" alt="LIAS" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}univh2clogo.png`} alt="Hassan II University" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}fsbmlogo.png`} alt="FSBM Casablanca" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}CNRSTlogo.png`} alt="CNRST Morocco" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}liaslogo.png`} alt="LIAS" /></div>
 
-              <div className="sponsor-logo-box"><img src="/ltimlogo.png" alt="LTIM" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}ltimlogo.png`} alt="LTIM" /></div>
                <div className="sponsor-logo-box">
-                <img src="/lamslogo.png" alt="LAMS" />
+                <img src={`${ASSET_BASE}lamslogo.png`} alt="LAMS" />
               </div> 
             </div>
           </div>
