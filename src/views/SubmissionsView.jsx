@@ -38,7 +38,7 @@ const SubmissionsView = () => {
               </section>
 
               <div className="easychair-cta">
-                <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noreferrer" className="btn-portal-primary">
+                <a href="https://cmt3.research.microsoft.com/ICISCT2026" target="_blank" rel="noreferrer" className="btn-portal-primary">
                   <ExternalLink size={16} /> ACCESS CMT PORTAL
                 </a>
               </div>
