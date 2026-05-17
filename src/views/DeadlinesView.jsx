@@ -16,7 +16,8 @@ const phases = [
   {
     id: 'abstract',
     title: 'Submission',
-    date: 'May 15, 2026',
+    date: 'May 30, 2026',
+    oldDate: 'May 15, 2026',
     icon: Send,
     status: 'active',
     description: 'Deadline for abstract submissions for ICISCT 2026.'
@@ -160,7 +161,18 @@ const DeadlinesView = () => {
                 {/* Node Metadata */}
                 <div className="node-label">
                   <span className="phase-title">{phase.title}</span>
-                  <span className="phase-date">{phase.date}</span>
+                  <span className="phase-date">
+                    {phase.oldDate ? (
+                      <>
+                        <span style={{ textDecoration: 'line-through', opacity: 0.5, marginRight: '8px' }}>
+                          {phase.oldDate.replace(', 2026', '')}
+                        </span>
+                        {phase.date}
+                      </>
+                    ) : (
+                      phase.date
+                    )}
+                  </span>
                 </div>
 
                 {/* Hover/Active Details (HUD Pane) */}
