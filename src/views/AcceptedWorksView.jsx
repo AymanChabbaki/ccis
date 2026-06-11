@@ -147,6 +147,7 @@ const AcceptedWorksView = () => {
         </div>
       </div>
 */}
+      </div>
       <style jsx>{`
         .accepted-works-registry {
           padding-top: 20px;
