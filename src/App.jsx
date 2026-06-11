@@ -24,7 +24,7 @@ import SpeakersView from './views/SpeakersView';
 import InfoView from './views/InfoView';
 import SubmissionsView from './views/SubmissionsView';
 import RegistrationView from './views/RegistrationView';
-//import AcceptedWorksView from './views/AcceptedWorksView';
+import AcceptedWorksView from './views/AcceptedWorksView';
 import NewsTicker from './components/NewsTicker';
 import './App.css';
 
@@ -33,7 +33,7 @@ const navItems = [
   { id: 'topics', label: 'Topics', icon: BookOpen, component: TopicsView, path: '/topics' },
   { id: 'deadlines', label: 'Dates', icon: Calendar, component: DeadlinesView, path: '/deadlines' },
   { id: 'speakers', label: 'Speakers', icon: Mic2, component: SpeakersView, path: '/speakers' },
-  //{ id: 'accepted', label: 'Program', icon: Award, component: AcceptedWorksView, path: '/accepted' },
+  { id: 'accepted', label: 'Program', icon: Award, component: AcceptedWorksView, path: '/accepted' },
   { id: 'submissions', label: 'Submissions', icon: FileEdit, component: SubmissionsView, path: '/submissions' },
   { id: 'registration', label: 'Registration', icon: CreditCard, component: RegistrationView, path: '/registration' },
   { id: 'committees', label: 'Committees', icon: Users, component: CommitteesView, path: '/committees' },
