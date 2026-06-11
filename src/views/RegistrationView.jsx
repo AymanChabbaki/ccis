@@ -20,10 +20,10 @@ const feeData = [
 
 const inclusions = [
  'Access to all conference sessions and keynotes (25–27 June 2026)',
-'Conference kit and Book of Abstracts',
+//'Conference kit and Book of Abstracts',
 'Coffee breaks and lunches',
-'Welcome reception and gala dinner',
-'ertificate of attendance/presentation'
+//'Welcome reception and gala dinner',
+'certificate of attendance/presentation'
 
 ];
 
