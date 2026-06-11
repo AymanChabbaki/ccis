@@ -29,12 +29,12 @@ const speakers = [
     bio: "50 years of experience in digital technologies, including AI. Consultant, Author, Speaker, Professor, Researcher, and Entrepreneur. Expertise in Management, Digital Governance, AI Transformation, Frugal AI, Strategy, Blockchain, and more."
   },
   {
-    name: "Soon to be revealed",
-    firstName: "Soon",
-    role: "Soon to be revealed",
-    tags: ["Soon", "Soon"],
-    image: `${ASSET_BASE}speaker_soon.png`,
-    bio: "Soon to be revealed"
+    name: "Dr. Idriss Sekkak",
+    firstName: "Idriss",
+    role: "University of Alberta",
+    tags: ["AI-driven modeling", "Epidemiology", "Macroeconomics", "PINNs"],
+    image: `${ASSET_BASE}idriss_sekkak.png`,
+    bio: "Specialist in advanced AI-driven modeling, combining epidemiology, macroeconomics, and Physics-Informed Neural Networks (PINNs) to simulate and predict complex real-world dynamics.\n\nArtificial Intelligence for Stochastic Macroeconomics, and Epidemic Dynamics: A PINN-Based Approach"
   }
 ];
 

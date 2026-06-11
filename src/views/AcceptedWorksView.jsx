@@ -33,12 +33,19 @@ const AcceptedWorksView = () => {
           <div className="accent-line"></div>
           <div className="header-meta">
             <h2>ACCEPTED <span className="text-secondary">WORKS</span></h2>
-            <div className="download-cta">
+            <div className="download-cta" style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'flex-end' }}>
+              <a href="/Papers.xls" className="btn-download-program" download>
+                <Download size={16} /> DOWNLOAD ACCEPTED PAPERS (.XLS)
+              </a>
               <button className="btn-download-program">
                 <Download size={16} /> DOWNLOAD FULL PROGRAM (PDF) [available soon]
               </button>
             </div>
           </div>
+        </div>
+        
+        <div className="registry-info" style={{ color: 'var(--text-secondary)', lineHeight: '1.6', fontSize: '1rem' }}>
+          <p>List of accepted abstracts and detailed session program will be published soon. ICISCT 2026 will be held in a hybrid format, with both on-site and online presentations.</p>
         </div>
 {/*  
        

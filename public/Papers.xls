@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10380</WindowHeight>
+  <WindowWidth>23040</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#70AD47" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s67">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="ICISCT2026">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="81" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="185.4"/>
+   <Column ss:AutoFitWidth="0" ss:Width="295.2"/>
+   <Column ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="52.199999999999996"/>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Paper ID</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Paper Title</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Author Names</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Camera Ready Submitted?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AI-Driven IoT Smart Home Automation System for Predictive Appliance Control and Energy Optimization</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Lamba, Dr. Anil Kumar *; J , Dr Arul Sindiya; A. , Dr. Sasi Kumar; Mary, M Flora ; N, Mallanagowda ; Koyyeda, Dr. Rajashekher </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">From Reactive to Predictive Quality Management: An AI-Metrics Architecture Framework</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">TALKAM, Issam*; BELANGOUR, Abdessamad ; HAMZANE, Ibrahim </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Multi-Branch LSTM with Attention for Industrial Time-Series Fault Diagnosis</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EL harnaf, Ibtissam*; Achtaich, Khadija; Tetouani, Samir</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Adaptive Multimodal Fusion of Visual, IoT, and Knowledge-Based Data for Context-Aware Plant Disease Diagnosis</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Alaoui, Fatima-zahra*; ELJIANI, laila; elfilali, Sanaa; AIT ABDELOUAHID, rachida; Banou, zouhier ; ellaky, zineb</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Marine Heat Pumps in Coastal Heating and Cooling Systems: Heat Exchanger Integration, Performance and Decarbonization Potential</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ABOU-ELFATH, ZAINA*; EL-HAMDANI, SAKINA</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">FedQR-Attend: A Federated Edge Intelligence and Adaptive-Token QR-Based Offline-First Attendance Management System for Rural School Deployments</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Sharma, Aakansha *</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">JJ2:ZERO TRUST BROWSER EXTENSION FOR SECURE PAYMENT AND FRAUD PREVENTION</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A, Kathiravan; R, Abishek; M, Mayakannan; G, Madhankumar; B, Dr B. Kalaiselvi*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NeuroSymbolicController: AI-Driven Safe Abstraction Synthesis for Robotic Task Planning Using Ellipsoidal State Covering and MCR Frameworks</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Singh, Shantanu*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">The Two-Stage Blueprint: How Generative Pre-Training and Fine-Tuning Forged the Foundation Model Paradigm</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Singh, Shantanu*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Artificial Intelligence-Driven Resilience in Urban  Supply Chains for Smart Cities: A Systematic  Literature Review on Risk Management and  Intelligent Logistics Systems </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">BEDDAOU, Hafssa*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">From Brains to Swarms: A Systems Architecture for LLM-Based Autonomous Agents</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Singh, Shantanu*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">From Solo Actors to Orchestrated Ecosystems: Disentangling AI Agents and Agentic AI</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Singh, Shantanu*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Multimodal AI Architectures for Smart Healthcare  Systems: A PRISMA-Based Review of Real-Time  Clinical Intelligence  </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Miftah, Kaoutar*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Who Owns the Smart City? Digital Sovereignty and Urban Intelligence in Morocco’s Smart City Transition </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Baidane, Salma*; DAFIR, Amine</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">IoT based Smart Grey Water Classification for Sewage Treatment Plant using TDS,pH,Temperature Sensors</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Nanduri, Dundisathishkumar*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MENDARI: A Digital Inclusion Marketplace for Women Artisans and Home-Based Entrepreneurs</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">elbejjaji, kawtar*; elbejjaji, kawtar</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Vulnerability Surface Analysis of the Model Context Protocol in Agentic Middleware: A 60-Day CVE Dissection with Neuromorphic Detection Frameworks and Distributed Tool Integrity Verification</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Bhanushali, Akshay*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Towards Resilient Urban Communication Infrastructure: A Defense-in-Depth Security Framework for VOIP Deployments in Smart City Environments</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ELLAKY, Zineb*; Matrane, Yassir; Alaoui, Fatima-Zahra; Benabbou, Faouzia; Sael, Nawal</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">From Road Traffic to Intelligent Mobility: A Case Study of AI-Based Urban Transport Transformation in Rabat</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Watik, Chaimaa*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">An Explainable Machine Learning Framework for Applicant Engagement Prediction in Online Recruitment</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Abbour, Fatima Zahra*; Ardchir, Soufiane; Ounacer, Soumaya; Azzouazi, Mohamed</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Advancing Medical Image Analysis Through Hybrid CNN-Transformer Architectures: A State-of-the-Art Review </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EL KHASSOUMI, chaimae*; Dehbane, Oualid; OUAHABI, Sara; BENLAHMAR, El habib </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">The management of intelligent information systems in organizational settings: &quot;Review of recent literature (2021-2026)&quot;</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EL MEKADEM, Noura*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Graduate Employability and Skills Gap Prediction in Smart Cities: Analysis and Conceptual Modeling </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Bella, Brahim*; Izourane, Fatim-Zahra; Chemlal, Yman; Azzouazi, Mohamed</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AI-Driven Business Documentation : A Comprehensive Review of Approaches and Applications</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Sebbar, Abdelhamid*; Zahour, Omar</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">UrbanT2V: Benchmarking Text-to-Video Diffusion Models for Smart City Visual Content Generation </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Hannouni, Salma*; Belarache, Oumaima; BENLAHMAR, El Habib; El Filali, Sanaa</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Generative AI That Creates as Humans Do: A Multi-Modal Process Alignment Framework</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Moumtaz, Yosra*; Chadi, Mohamed-Amine; Mouchawrab, Samar</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Systemic Urban Entanglement Theory (SUET): Towards a Mathematical and Predictive Modelling of Intelligent Urban Ecosystems  </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">belkadi, hakim*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Comprehensive Benchmark for Moroccan Dialect Understanding and Generation in Large Language Models</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">LABIED, MARIA*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Leveraging Pretrained Language Models for Conflict Discourse Analysis: A Case Study on Online Discussions </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Matrane, Yassir*; Ellaky, Zineb ; Banou, Zouheir; Alaoui, Fatima-zahra; Benabbou, Faouzia; Saber, Ilyes</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Intelligent Real-Time Detection of Dynamic Objects in Video Scenes through Computer Vision and AI: Smart City Application</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">bouchama, touhami*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Prompt Sensitivity and Large Language Model Performance in Metaphor Detection: A Comparative Experimental Analysis </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Banou, Zouheir*; Sakhi, Hasnae; Matrane, Yassir; Alaoui, Fatima-Zahra; El Jiani, Laila; el filali, Sanaa; Benlahmar, El Habib</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Plane-Aware Hybrid Deep Learning Framework for Automated Breast MRI Segmentation in Smart Healthcare Systems </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">El Jiani, Laila*; BANOU, Zouheir; ALAOUI, Fatima-Zahra; SAKHI, Hasnae; BENLAHMAR, EL Habib; EL FILALI, Sanaa</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Energy-Efficient Intrusion Detection in WSN using Adaptive Swarm Optimization and Advanced Deep Neural Network</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">W, Brajula *</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Cross Domain NeuroFusion Attention with Gradient Guided Multi Scale Deformable Spatial Attention Network for Brain Tumor Detection in CT and MRI</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">W, Brajula *</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Temperature Scaled Deformable Cross Modal Fusion with Monte Carlo Modulated Hierarchical Attention for Brain Tumor Detection from CT, MRI and Clinical Data</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">W, Brajula *</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Machine Learning and Decision Making in construction Projects: A Systematic Review.</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">JABOURI, Anas*; EZZIADI, Abdelali</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">LLM-Augmented MLOps for Smart City Infrastructure: Semantic Monitoring and Adaptive Decision Support in Production ML Systems</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ESSADEQ, ICHRAQ*; Nouh, Said; Kandali, Khalid</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Explainable AI for Medical Image Classification Using Grad-CAM</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">GUENDOUL, Oumaima*; TABII, Youness; OULAD HAJ THAMI, Rachid</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">PartNet: Deep Learning and Evolutionary Optimization for parking Allocation</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Mouanid, Sihame*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Blockchain and IOTA-Based Distributed Ledger Architectures for Secure and Scalable IoT Systems</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">elmnajja, dina*; fartitchou, Mohamed; daouayry, youssef; kannouf, Nabil</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Explainable Multi-Label Biphasic Screening Framework for Behavioral and Emotional Concerns in Primary-School Learners Integrating Checklist NLP Fusion and Machine Learning with Bootstrap CI and K Fold CV</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Banerjee, Sohini*; Barhate, Shweta</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">46</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Gaze Tracking for Automatic Detection of Suspicious Behavior during Online Assessments</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">abourifa, hanane*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Toward Adaptive Smart Learning: ‎ A Behavioral Analytics Framework for Proactive Student ‎Intervention in Smart Campuses ‎</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">IZOURANE, Fatim-zahra*; Bella, Brahim; Ardchir, Soufiane; Ounacer, Soumaya; Azzouazi, Mohamed</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Scalable Self-Healing for Smart City IoT Ecosystems: Integrating Trust-Aware Multi-Agent Systems</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Mohamed, Amchia*; LAILA, MACHKOUR; EL BRAHIMI , MERIEM; GHAZOUANI, MOHAMED</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AI-Based Intelligent Irrigation Optimization for Urban Green Spaces Using Multi-Sensor Data: A Review</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Meriem, EL BRAHIMI*; Laila, MACHKOUR; Wail, BOUHADDA; Mohamed, GHAZOUANI</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AI-Based Anomaly Detection and Real-Time Response Systems for Urban Green Space Management in Smart Cities: A Review</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MACHKOUR, LAILA*; Bouhadda, Wail; Amchia, Mohamed; Ghazouani, Mohamed</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Smart Office System Based on Machine ‎Learning and IoT in a University Campus</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">IZOURANE, Fatim-zahra*; Bella, Brahim</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Self-supervised Multimodal Scene Understanding for Environmental Monitoring in Smart Cities</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Bouhadda, Wail*; Amchia, Mohamed; El brahimi, Meriem; Ghazouani, Mohamed</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">SMOTE for Stock Crash Prediction: A Negative Result on Imbalanced Financial Time Series</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Saifi, Wafae*; Nouh, Said; Bahassine, Said; Chemseddine Idrissi, Imrane</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Dynamic Decision Support in Smart Agriculture Through the Integration of Artificial Intelligence, Computer Vision, and Complex System Modeling</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Taymi, Imane*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Exploring Artificial Intelligence Adoption for Smart University Governance in Morocco: A Survey-Based Needs Analysis</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHAYMAA, ERRACHID*; ACHTAICH, KHADIJA; AIT DAOUD, MOHAMMED</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">GraphCodeBERT-Based Hybrid Models for Solidity Smart Contract Vulnerability Detection</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">el inani, najwa*; BENABBOU, Faouzia; SABIRI, Khadija</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Cross-Modal Fake News Detection on Social Media Using Textual and Visual Consistency Analysis</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Qaqa, Saad*; BENABBOU, Faouzia</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">IoT and Artificial Intelligence for Smart Classroom Management in Primary Schools</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Ouahouda, Fatima zohra*; achtaich, khadija; achtaich, naceur</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">62</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AI-Driven Adaptive Irrigation and Predictive Maintenance of Urban Green Spaces under Water Constraints in Smart Cities</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">chafiq, fouad*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Cognitive Sovereignty and the Sustainability Paradox in AI-Driven Industrial Transformation: Evidence from Africa’s First Lighthouse Factory</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ZANG, YUANYUAN*; Bennani, AZ</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Machine Learning Approaches for Thermophysical Property Prediction of Sustainable Biodiesel Blends Containing Waste Cooking Oil and 1-Butanol </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">SAMADI, Khaoula*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Photo-Oxidative Degradation of Low-Density Polyethylene Films under Natural Mediterranean Sunlight: A Multi-Technique Structural and Vibrational Study</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EL KZAINI, WIAM*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">From Translation to Misunderstanding Prevention: An Arabic Dataset for Smart-City Digital Literacy in Morocco</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Essaadani, Khalid*; Ziti, Soumia</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">67</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Empowering Urban Mobility Decisions: A Dynamic MATSim Framework for the Rabat Region</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Fathi, Yassine*; Qbouche, Khalid; Rhoulami, Khadija</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Hybrid Machine Learning Framework for Insurance Risk Prediction: Combining Structured Data, Temporal Patterns, and Explainable AI</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ERRAHIBI, HAMZA*; Chemlal, Yman; Azzouazi, Mohamed</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">IT Reskilling for Smart Cities: The Impact of Academic Background on Learning Outcomes in Data-Driven Training Programs </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">SAMMAH, salma*; ACHTAICH, Khadija ; AIT DAOUD, Mohammed </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Semantic Segmentation and Machine Learning for  Agricultural Yield Prediction Using Multi-Temporal  Satellite and RGB Data in the Souss-Massa Region</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Abourabia, Imade*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">71</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Beyond Detection: A Conceptual Framework for Linking AI-Based Student Engagement Recognition to Pedagogical Intervention</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">QARBAL, IKRAM*; SAEL, Nawal; OUAHABI, Sara</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">72</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">SCAD: Automatic ODD Coverage Assessment from Unannotated Multimodal Naturalistic Driving Data</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Herchan, Asma*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">73</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Adaptive Speed-Derived Proxy Risk Annotation for Risk-Aware Traffic Modeling in Urban Environments</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">boulaid, sara*; Bouhsissin, Soukaina; Zakrani, Abdelali; Banane, Mouad</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">74</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NeuroRoute Calme: A Sensory-Aware Pedestrian Routing System for Neurodivergent and Mobility-Impaired Users Using Multi-Criteria Graph Optimization and Transferable ML-Based Calm Scoring</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">HAIMOUD, Abdelaziz*; ikbaiss, abdelghafour; Kassmi, Ayoub</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AI vs. Traditional Methods in Big Data Cleaning and Validation: A Comparative Study of Accuracy, Time, and Error Rate </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NAIT SI BOURHIM, Ayoub*; El Aissi, Mohamed El Mehdi; Benjelloun, Sarah; BOULAICH, Mohammed Ali; LAKHRISSI, Younes</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">76</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Neural Network Training with Artificial Data for Parameter Estimation of the Fisher&#45;-KPP Equation</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Bouggar, Driss*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">77</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Designing Emotion-Aware Customer Journeys through Artificial Intelligence: Trends, Applications, and Research Directions from a Systematic Literature Review</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">El Bhilat, HIND*; BAADDI, MOHAMMED</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">YOLO-Based Pedestrian Detection and Monocular Distance Estimation  </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">HAMZA, ASSEMLALI*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">79</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">LocalTax-RAG: A Privacy-Preserving Intelligent Assistant for Moroccan Accounting and Tax Regulations</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Bouhsissin, Soukaina*; Sael, Nawal</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Systematic Review of Information Extraction from Legal Documents: From Rule-Based Systems to Large Language Models and Knowledge Graphs for Smart Governance</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Zahid, Achraf*; Nawal, SAEL </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">81</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Dual LoRA with Dynamic Gating for Emotion-Adaptive Client Service Chatbots in Smart City Banking</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Kasbouya, Mohammed*; Sael, Nawal</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">82</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Federated Deep Learning Framework for Privacy-Aware Intrusion Detection in IoT Environments </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Baich, Marwa*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">83</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Multimodal and Multilingual AI for Plant Disease Diagnosis: A PRISMA Review for Smart Urban Agriculture</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">kaissouni, oussama*; OUAHABI, Sara; SAEL, Nawal </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">A Survey on Imbalanced Learning in Supervised Classification: Methods, Metrics, and Applications</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Tajani, Youssef*</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">85</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Cancelable Iris Authentication Using Hybrid Feature Extraction for Privacy Preserving Smart City Acess Control </Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">LOURIGA, ZINE.EDDINE*; JABRI, ISMAIL; EL OUAAZIZI, AZIZA; EL AFFAR, ANASS</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">86</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Sentiment Classification in Moroccan News Comments: A Comparative Study of Pretrained Arabic Transformers with a Focus on Near-Neutral Sentiment</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AMZIL, Taoufik*; AIT ABDELOUAHID, Rachida; SAEL, Nawal</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Auditing Calculation Errors in Judicial Workers Compensation Awards: A Seven-Year Empirical Study Toward Smart Legal Governance</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KEMAL, zakaria*; HANOUNE, mostafa</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -75,9 +75,19 @@ const RegistrationView = () => {
                     <span>{text}</span>
                   </div>
                 ))}
-                <div className="policy-note">
-                <AlertCircle size={14} className="accent inc-item" />
-                <span>Note: Payment instructions: [To be added — bank transfer details, online payment link, etc.]</span>
+                <div className="payment-info" style={{ marginTop: '20px', padding: '20px', background: 'rgba(0, 229, 255, 0.05)', border: '1px solid var(--accent)', borderRadius: '8px' }}>
+                  <h4 style={{ color: 'var(--accent)', marginBottom: '10px', fontSize: '0.9rem' }}>Registration Fee Payment - Bank Account Information</h4>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                    <p><strong>Beneficiary:</strong> ASSOCIATION MAROCAINE D'INTELLIGENCE ARTIFICIELLE ET D'INNOVATION</p>
+                    <p><strong>Bank:</strong> CIH Bank</p>
+                    <p><strong>RIB:</strong> 230 780 7029554221012200 38</p>
+                    <p><strong>IBAN:</strong> MA64230780702955422101220038</p>
+                    <p><strong>SWIFT/BIC:</strong> CIHMMAMC</p>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '15px', color: 'var(--accent)', fontWeight: 'bold' }}>
+                      <AlertCircle size={14} />
+                      <span>All bank charges have to be paid in addition to the registration fees.</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -31,6 +31,14 @@ const phases = [
     description: 'Notification of paper acceptance and expert feedback.'
   },
   {
+    id: 'camera_ready',
+    title: 'Camera Ready',
+    date: 'June 10, 2026',
+    icon: FileText,
+    status: 'pending',
+    description: 'Deadline for camera-ready paper submissions.'
+  },
+  {
     id: 'registration',
     title: 'Registration',
     date: 'June 15, 2026',
