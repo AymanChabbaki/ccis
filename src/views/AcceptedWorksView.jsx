@@ -52,17 +52,17 @@ const AcceptedWorksView = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <a href="/Papers.xls" className="btn-glow" download>
-              <div className="btn-bg"></div>
+            {/*<a href="/Papers.xls" className="btn-glow" download>
+             <div className="btn-bg"></div>
               <span className="btn-text"><Download size={16} /> DATASET (.XLS)</span>
-            </a>
+            </a> */}
             <button className="btn-outline">
               <Download size={16} /> FULL PROGRAM [SOON]
             </button>
           </motion.div>
         </div>
-
-        {/* Command Palette Search */}
+        {/*
+        
         <motion.div 
           className="search-palette"
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ const AcceptedWorksView = () => {
           </div>
         </motion.div>
        
-        {/* Modern Ledger Section */}
+        {/* Modern Ledger Section 
         <div className="registry-section">
           <div className="ledger-header">
             <div className="col-id">ID</div>
@@ -120,7 +120,7 @@ const AcceptedWorksView = () => {
                   </div>
                   <div className="col-authors">
                     <Users size={14} className="accent author-icon" />
-                    <span className="authors-text">{paper.authors.replace(/\*/g, '')}</span>
+                    <span className="authors-text">{paper.authors.replace(/\g, '')}</span>
                   </div>
                 </motion.div>
               ))}
@@ -146,7 +146,7 @@ const AcceptedWorksView = () => {
           )}
         </div>
       </div>
-
+*/}
       <style jsx>{`
         .accepted-works-registry {
           padding-top: 20px;
