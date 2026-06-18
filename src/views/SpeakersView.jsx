@@ -25,7 +25,7 @@ const speakers = [
     firstName: "Az Eddine",
     role: "Engineer MBA USA Docteur Sorbonne, HDR France",
     tags: ["AI", "digital","Strategy","Blockchain"],
-    image: `${ASSET_BASE}Az Eddine Bennani.png`,
+    image: `${ASSET_BASE}bennani.jpeg`,
     bio: "50 years of experience in digital technologies, including AI. Consultant, Author, Speaker, Professor, Researcher, and Entrepreneur. Expertise in Management, Digital Governance, AI Transformation, Frugal AI, Strategy, Blockchain, and more."
   },
   {
@@ -35,6 +35,14 @@ const speakers = [
     tags: ["AI-driven modeling", "Epidemiology", "Macroeconomics", "PINNs"],
     image: `${ASSET_BASE}idriss_sekkak.png`,
     bio: "Specialist in advanced AI-driven modeling, combining epidemiology, macroeconomics, and Physics-Informed Neural Networks (PINNs) to simulate and predict complex real-world dynamics.\n\nArtificial Intelligence for Stochastic Macroeconomics, and Epidemic Dynamics: A PINN-Based Approach"
+  },
+  {
+    name: "Mr.  Ismail Harti",
+    firstName: "Ismail",
+    role: "Strategic Cybersecurity and IS Risk Leader at HPS",
+    tags: ["Cybersecurity", "Cyber Resilience", "IS Risk", "Leadership"],
+    image: `${ASSET_BASE}harti.jpg`,
+    bio: "A recognized expert in cyber resilience strategies, innovative solutions, and inclusive leadership. Strategic Cybersecurity and IS Risk Leader at HPS, driving forward-thinking approaches to organizational security and digital risk management."
   }
 ];
 
@@ -101,10 +109,10 @@ const SpeakersView = () => {
 
         .compact-strip {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, 1fr);
           gap: 20px;
           width: 100%;
-          max-width: 1200px;
+          max-width: 1400px;
         }
 
         .speaker-pod {
@@ -232,7 +240,11 @@ const SpeakersView = () => {
           transform: scaleX(1);
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1200px) {
+          .compact-strip { grid-template-columns: repeat(3, 1fr); max-width: 1000px; }
+        }
+
+        @media (max-width: 768px) {
           .compact-strip { grid-template-columns: repeat(2, 1fr); }
         }
 
