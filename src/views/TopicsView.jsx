@@ -88,6 +88,17 @@ const TopicsView = () => {
 
   return (
     <div className="container">
+      <div className="section-header-block">
+        <span className="section-eyebrow">ICISCT 2026</span>
+        <h2 className="section-headline">Conference <span className="hl-accent">Topics</span></h2>
+        <p className="section-subtext">Five research tracks covering the latest innovations in smart cities, AI, and digital governance.</p>
+        <div className="section-rule">
+          <div className="rule-line"></div>
+          <div className="rule-diamond"></div>
+          <div className="rule-line right"></div>
+        </div>
+      </div>
+
       <div className="topics-explorer">
         {/* Left Sidebar: Tracks List */}
         <div className="tracks-sidebar">

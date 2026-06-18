@@ -113,6 +113,17 @@ const DeadlinesView = () => {
 
   return (
     <div className="container">
+      <div className="section-header-block">
+        <span className="section-eyebrow">ICISCT 2026</span>
+        <h2 className="section-headline">Important <span className="hl-accent">Dates</span></h2>
+        <p className="section-subtext">Key milestones for the submission, review, and conference timeline.</p>
+        <div className="section-rule">
+          <div className="rule-line"></div>
+          <div className="rule-diamond"></div>
+          <div className="rule-line right"></div>
+        </div>
+      </div>
+
       <div className="deadlines-roadmap">
         
         {/* Global Progress Info */}

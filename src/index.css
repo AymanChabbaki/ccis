@@ -30,6 +30,9 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-dark);
+  background-image: radial-gradient(rgba(0, 229, 255, 0.022) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-attachment: fixed;
   color: var(--text-primary);
   /* Unlocked global overflow to allow natural navigation of long lists */
   overflow-y: auto;

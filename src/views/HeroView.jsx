@@ -10,6 +10,13 @@ const HeroView = () => {
     <div className="hero-landing">
       <div className="hero-cinematic">
         <div className="hero-bg-overlay"></div>
+
+        {/* Decorative spinning rings */}
+        <div className="hero-ring ring-1" />
+        <div className="hero-ring ring-2" />
+        <div className="hero-ring ring-3" />
+        <div className="hero-ring ring-4" />
+
         <img src={`${ASSET_BASE}hero.png`} alt="Smart City Future" className="hero-main-img" />
 
         <div className="hero-content-wrapper container">
@@ -154,8 +161,67 @@ const HeroView = () => {
         }
 
         .glow-text {
-          color: var(--accent);
-          text-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+          background: linear-gradient(90deg, #00E5FF 0%, #80f7ff 40%, #00E5FF 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: hero-shimmer 3.5s linear infinite;
+          filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.35));
+        }
+
+        @keyframes hero-shimmer {
+          from { background-position: 0% center; }
+          to   { background-position: 200% center; }
+        }
+
+        .hero-ring {
+          position: absolute;
+          border-radius: 50%;
+          border: 1px solid rgba(0, 229, 255, 0.06);
+          pointer-events: none;
+          z-index: 2;
+        }
+
+        .ring-1 {
+          width: 420px;
+          height: 420px;
+          right: 18%;
+          top: 50%;
+          border-style: dashed;
+          border-color: rgba(0, 229, 255, 0.07);
+          animation: ring-spin 50s linear infinite;
+        }
+
+        .ring-2 {
+          width: 620px;
+          height: 620px;
+          right: 10%;
+          top: 50%;
+          border-color: rgba(0, 229, 255, 0.04);
+          animation: ring-spin 70s linear infinite reverse;
+        }
+
+        .ring-3 {
+          width: 300px;
+          height: 300px;
+          right: 23%;
+          top: 50%;
+          border-color: rgba(0, 229, 255, 0.09);
+          animation: ring-spin 35s linear infinite;
+        }
+
+        .ring-4 {
+          width: 850px;
+          height: 850px;
+          right: 0%;
+          top: 50%;
+          border-color: rgba(0, 229, 255, 0.025);
+          animation: ring-spin 90s linear infinite reverse;
+        }
+
+        @keyframes ring-spin {
+          from { transform: translateY(-50%) rotate(0deg); }
+          to   { transform: translateY(-50%) rotate(360deg); }
         }
 
         .year-accent {

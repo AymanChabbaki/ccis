@@ -64,6 +64,13 @@ function App() {
 
   return (
     <div className="landing-container">
+      {/* Fixed ambient background orbs */}
+      <div className="ambient-bg" aria-hidden="true">
+        <div className="amb-orb amb-orb-1" />
+        <div className="amb-orb amb-orb-2" />
+        <div className="amb-orb amb-orb-3" />
+      </div>
+
       {/* Top Navigation */}
       <header className="main-header">
         <div className="nav-container container">
