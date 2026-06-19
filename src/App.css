@@ -316,7 +316,7 @@
 }
 .sponsors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .sponsor-logo-box {
@@ -332,12 +332,21 @@
   overflow: hidden;
 }
 .sponsor-logo-box img {
-  max-height: 110%;
-  max-width: 100%;
+  height: 54px;
+  width: auto;
+  max-width: 82%;
   object-fit: contain;
   filter: brightness(0) invert(1) opacity(0.6);
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* 1. univh2clogo 250×219 */ .sponsor-logo-box:nth-child(1) img { height: 54px; }
+/* 2. fsbmlogo    454×250 */ .sponsor-logo-box:nth-child(2) img { height: 40px; }
+/* 3. hps         441×114 */ .sponsor-logo-box:nth-child(3) img { height: 27px; max-width: 78%; }
+/* 4. liaslogo   2481×2482*/ .sponsor-logo-box:nth-child(4) img { height: 54px; }
+/* 5. ltimlogo   1280×1280*/ .sponsor-logo-box:nth-child(5) img { height: 62px; }
+/* 6. LAMS        952×1151*/ .sponsor-logo-box:nth-child(6) img { height: 59px; }
+/* 7. AM2I        500×500 */ .sponsor-logo-box:nth-child(7) img { height: 62px; }
+/* 8. ABC         289×289 */ .sponsor-logo-box:nth-child(8) img { height: 54px; }
 .sponsor-logo-box:hover {
   background: rgba(0, 229, 255, 0.08);
   border-color: var(--accent);
@@ -476,4 +485,387 @@
   background: var(--accent);
   transform: rotate(45deg);
   box-shadow: 0 0 10px var(--accent);
+}
+
+/* ── Theme Toggle Button ─────────────────────────── */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+/* ── Light Mode Overrides ────────────────────────── */
+
+/* Global heading fix — overrides every hardcoded color:#fff in JSX style blocks */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4 {
+  color: #0B2046 !important;
+}
+
+/* Global accent class fix */
+html.light .accent { color: #0066CC !important; }
+
+/* Layout & Nav */
+html.light .main-header {
+  background: rgba(238, 244, 252, 0.92);
+  border-bottom-color: rgba(11, 32, 70, 0.08);
+  box-shadow: 0 2px 20px rgba(11, 32, 70, 0.06);
+}
+html.light .nav-link { color: #4A6080; }
+html.light .nav-link:hover { color: #0B2046; }
+html.light .nav-link.active { color: #0066CC; }
+html.light .nav-underline { background: #0066CC; }
+html.light .user-count-header { background: rgba(11,32,70,0.05); border-color: rgba(11,32,70,0.1); }
+html.light .count-val { color: #4A6080; }
+html.light .live-dot { background: #4CBB6F; box-shadow: 0 0 10px #4CBB6F; }
+html.light .theme-toggle:hover { background: rgba(11,32,70,0.07); color: #0B2046; }
+html.light .btn-primary-shiny { background: linear-gradient(135deg, #0066CC, #004FA8); }
+html.light .mobile-toggle { color: #0B2046; }
+
+/* Mobile menu */
+html.light .mobile-menu { background: rgba(238,244,252,0.98); border-top-color: rgba(11,32,70,0.08); }
+html.light .mobile-nav-link { background: rgba(11,32,70,0.03); color: #4A6080; border-color: transparent; }
+html.light .mobile-nav-link.active { background: rgba(0,102,204,0.07); border-color: #0066CC; color: #0066CC; }
+html.light .mobile-active-dot { background: #0066CC; box-shadow: 0 0 10px #0066CC; }
+
+/* Ambient orbs */
+html.light .amb-orb-1 { background: radial-gradient(circle, rgba(0,100,255,0.05) 0%, transparent 65%); }
+html.light .amb-orb-2 { background: radial-gradient(circle, rgba(0,60,180,0.04) 0%, transparent 65%); }
+html.light .amb-orb-3 { background: radial-gradient(circle, rgba(0,120,255,0.03) 0%, transparent 65%); }
+
+/* Dynamic viewport */
+html.light .dynamic-viewport {
+  background: radial-gradient(circle at top, rgba(0,100,255,0.03), transparent);
+}
+
+/* Sponsors */
+html.light .sponsors-registry { border-top-color: rgba(11,32,70,0.08); }
+html.light .sponsor-logo-box { background: rgba(255,255,255,0.8); border-color: rgba(11,32,70,0.08); }
+html.light .sponsor-logo-box img { filter: none; opacity: 0.7; }
+html.light .sponsor-logo-box:nth-child(1) img { height: 68px; }
+html.light .sponsor-logo-box:nth-child(2) img { height: 65px; }
+html.light .sponsor-logo-box:nth-child(3) img { height: 27px; max-width: 78%; }
+html.light .sponsor-logo-box:nth-child(4) img { height: 105px; }
+html.light .sponsor-logo-box:nth-child(5) img { height: 130px; }
+html.light .sponsor-logo-box:nth-child(6) img { height: 74px; }
+html.light .sponsor-logo-box:nth-child(7) img { height: 95px; }
+html.light .sponsor-logo-box:nth-child(8) img { height: 96px; }
+html.light .sponsor-logo-box:hover { background: rgba(0,102,204,0.05); border-color: #0066CC; box-shadow: 0 20px 40px rgba(11,32,70,0.08), 0 0 20px rgba(0,102,204,0.06); }
+html.light .sponsor-logo-box:hover img { filter: none; opacity: 1; }
+html.light .registry-header-hud .accent-tag { color: #0066CC; }
+html.light .registry-header-hud .title-row { color: #0B2046; }
+
+/* ── Light: Committees View ─────────── */
+html.light .min-tab { color: rgba(11,32,70,0.35); }
+html.light .min-tab.active { color: #0066CC; }
+html.light .minimal-search { color: #0066CC; border-bottom-color: rgba(11,32,70,0.1); }
+html.light .minimal-search input { color: #0B2046; }
+html.light .index-title-row h3 { color: rgba(11,32,70,0.45) !important; }
+html.light .member-name { color: #0B2046; }
+html.light .wall-name { color: #0B2046; }
+html.light .wall-item:hover { color: #0066CC; }
+
+/* ── Light: Info / Venue View ───────── */
+html.light .accent-tag { color: #0066CC; opacity: 0.8; }
+html.light .section-label span { color: rgba(11,32,70,0.45) !important; }
+html.light .btn-secondary-outline { color: #0B2046; background: rgba(11,32,70,0.03); border-color: rgba(11,32,70,0.12); }
+html.light .btn-secondary-outline:hover { background: rgba(0,102,204,0.06); border-color: #0066CC; color: #0066CC; }
+html.light .row-title { color: #0B2046; }
+html.light .label-box { background: rgba(0,102,204,0.1); border-color: #0066CC; }
+html.light .label-box span { color: #0B2046; }
+html.light .map-frame { box-shadow: 0 0 40px rgba(0,102,204,0.08); }
+
+/* Footer */
+html.light .compact-footer { background: rgba(238,244,252,0.97); border-top-color: rgba(11,32,70,0.08); }
+html.light .cmt-ack { color: #4A6080; }
+html.light .social-pill { background: rgba(11,32,70,0.04); color: #4A6080; }
+html.light .social-pill a { color: #0066CC; }
+
+/* ── Light: Hero View ───────────────── */
+html.light .hero-bg-overlay {
+  background: linear-gradient(90deg, rgba(238,244,252,0.95) 25%, rgba(238,244,252,0.35) 100%);
+}
+html.light .glow-text {
+  background: linear-gradient(90deg, #0066CC 0%, #0099EE 50%, #0066CC 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: none;
+}
+html.light .hero-ring { border-color: rgba(0,102,204,0.08); }
+html.light .stat-pill { background: rgba(255,255,255,0.8); border-color: rgba(11,32,70,0.1); }
+html.light .stat-num { color: #0066CC; }
+html.light .stat-label { color: #4A6080; }
+html.light .meta-text .label { color: #0B2046; }
+html.light .meta-text .value { color: #0B2046; }
+html.light .icon-cyan { color: #0066CC; }
+html.light .hero-intro p { color: #4A6080; }
+html.light .year-accent { color: #0B2046 !important; -webkit-text-fill-color: #0B2046 !important; }
+html.light .editions-tag { color: #0066CC; }
+html.light .edition-tile {
+  background: rgba(255,255,255,0.7);
+  border-color: rgba(11,32,70,0.08);
+}
+html.light .edition-tile:hover { background: rgba(255,255,255,0.95); border-color: #0066CC; }
+html.light .tile-title { color: #0B2046; }
+html.light .tile-desc { color: #4A6080; }
+html.light .tile-icon { background: rgba(0,102,204,0.08); color: #0066CC; }
+html.light .edition-tile:hover .tile-icon { background: #0066CC; color: #fff; box-shadow: 0 0 15px #0066CC; }
+html.light .btn-glow { background: #0066CC; box-shadow: 0 0 20px rgba(0,102,204,0.25); }
+html.light .btn-glow:hover { box-shadow: 0 20px 40px rgba(0,102,204,0.35); }
+html.light .workshop-tag { color: #4A6080; }
+
+/* ── Light: Section Headers ─────────── */
+html.light .section-headline { color: #0B2046; }
+html.light .section-subtext { color: #4A6080; }
+html.light .section-eyebrow { color: #0066CC; }
+html.light .rule-line { background: linear-gradient(90deg, transparent, #0066CC); }
+html.light .rule-line.right { background: linear-gradient(90deg, #0066CC, transparent); }
+html.light .rule-diamond { background: #0066CC; box-shadow: 0 0 10px #0066CC; }
+
+/* ── Light: Speakers View ───────────── */
+html.light .compact-showcase-container { background: transparent; }
+html.light .speaker-pod {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(11,32,70,0.1);
+  box-shadow: 0 2px 15px rgba(11,32,70,0.06);
+}
+html.light .speaker-pod:hover {
+  background: rgba(255,255,255,0.97);
+  border-color: #0066CC;
+  box-shadow: 0 15px 30px rgba(11,32,70,0.12);
+}
+html.light .pod-content h3 { color: #0B2046; }
+html.light .pod-role { color: #4A6080; }
+html.light .pod-keynote { color: #0066CC; }
+html.light .p-tag { background: rgba(0,102,204,0.06); color: #0066CC; border-color: rgba(0,102,204,0.15); }
+html.light .pod-bio p { color: #4A6080; }
+
+/* ── Light: Topics View ─────────────── */
+html.light .track-nav-item { background: rgba(255,255,255,0.8); border-color: rgba(11,32,70,0.08); color: #0B2046; }
+html.light .track-nav-item:hover { background: rgba(255,255,255,0.95); }
+html.light .track-nav-item.active { border-color: #0066CC; background: rgba(0,102,204,0.05); }
+html.light .topics-hud { background: rgba(255,255,255,0.8); border-color: rgba(11,32,70,0.1); }
+html.light .hud-title-meta h2 { color: #0B2046; }
+html.light .large-icon { color: #0066CC; }
+html.light .track-desc { color: #4A6080; }
+html.light .track-id-slug { color: rgba(11,32,70,0.4); }
+html.light .sub-topic-row { color: #0B2046; border-bottom-color: rgba(11,32,70,0.04); }
+html.light .sub-topic-row:hover { color: #0066CC; }
+html.light .node-icon { color: #0066CC; }
+html.light .sidebar-header { color: rgba(11,32,70,0.4); }
+html.light .accent-icon { color: #0066CC; }
+html.light .hud-corner { border-color: rgba(0,102,204,0.25); }
+html.light .scan-line { background: linear-gradient(90deg, transparent, #0066CC, transparent); }
+html.light .btn-hud { border-color: #0066CC; color: #0066CC; }
+html.light .btn-hud:hover { background: #0066CC; color: #fff; }
+
+/* ── Light: Deadlines View ──────────── */
+html.light .roadmap-header { color: rgba(11,32,70,0.4); }
+html.light .next-countdown span { color: #0066CC; }
+html.light .main-track-line { background: rgba(11,32,70,0.06); }
+html.light .node-core { background: #EEF4FC; border-color: rgba(11,32,70,0.2); color: rgba(11,32,70,0.4); }
+html.light .node-outline { border-color: rgba(0,102,204,0.15); }
+html.light .completed .node-core { color: #0066CC; border-color: #0066CC; background: rgba(0,102,204,0.05); }
+html.light .active .node-core { color: #fff; background: #0066CC; border-color: #0066CC; box-shadow: 0 0 30px rgba(0,102,204,0.4); }
+html.light .phase-title { color: #0B2046; }
+html.light .phase-date { color: #0066CC; }
+html.light .active-hud-panel { background: rgba(255,255,255,0.8); border-left-color: #0066CC; }
+html.light .hud-label { color: #0066CC; }
+html.light .hud-main-info h3 { color: #0B2046; }
+html.light .hud-main-info p { color: #4A6080; }
+html.light .btn-roadmap { background: #0066CC; }
+html.light .btn-roadmap.outline { border-color: rgba(11,32,70,0.15); color: #0B2046; }
+html.light .node-details-pop { background: #fff; border-color: #0066CC; color: #0B2046; }
+
+/* ── Light: Programme View ──────────── */
+html.light .prog-header { border-bottom-color: rgba(11,32,70,0.08); }
+html.light .prog-eyebrow { color: #0066CC; }
+html.light .prog-title { color: #0B2046; }
+html.light .prog-meta { color: #4A6080; }
+html.light .prog-note { color: rgba(11,32,70,0.3); }
+html.light .download-btn { background: rgba(0,102,204,0.07); border-color: rgba(0,102,204,0.25); color: #0066CC; }
+html.light .download-btn:hover { background: #0066CC; color: #fff; }
+html.light .day-tab { background: rgba(255,255,255,0.7); border-color: rgba(11,32,70,0.08); }
+html.light .day-tab:hover { background: rgba(255,255,255,0.95); border-color: rgba(0,102,204,0.25); }
+html.light .day-tab.active { background: rgba(0,102,204,0.06); border-color: #0066CC; }
+html.light .day-date { color: #0B2046; }
+html.light .day-theme { color: #4A6080; }
+html.light .day-label { color: #0066CC; }
+html.light .slot-time { color: rgba(11,32,70,0.35); }
+html.light .break-bar { color: rgba(11,32,70,0.25); border-top-color: rgba(11,32,70,0.06); }
+html.light .logistics-pill { background: rgba(255,255,255,0.6); border-color: rgba(11,32,70,0.06); }
+html.light .slot-title-text { color: rgba(11,32,70,0.7); }
+html.light .plenary-card { background: linear-gradient(135deg,rgba(0,102,204,0.05) 0%,rgba(0,60,160,0.05) 100%); border-color: rgba(0,102,204,0.2); border-left-color: #0066CC; }
+html.light .plenary-num { color: #0066CC; }
+html.light .plenary-title { color: #0B2046; }
+html.light .plenary-speaker { color: #0066CC; }
+html.light .plenary-chair { color: rgba(11,32,70,0.4); }
+html.light .ceremony-card { background: linear-gradient(135deg,rgba(255,180,50,0.05) 0%,rgba(200,100,0,0.04) 100%); }
+html.light .ceremony-title { color: #0B2046; }
+html.light .ceremony-items li { color: #4A6080; }
+html.light .parallel-label { color: #0066CC; }
+html.light .session-card { background: rgba(255,255,255,0.75); border-color: rgba(11,32,70,0.08); }
+html.light .session-card:hover { border-color: rgba(0,102,204,0.2); }
+html.light .session-title { color: #0B2046; }
+html.light .session-chairs { color: rgba(11,32,70,0.4); }
+html.light .session-num-badge { background: rgba(0,102,204,0.08); border-color: rgba(0,102,204,0.2); color: #0066CC; }
+html.light .paper-count-badge { background: rgba(11,32,70,0.04); color: rgba(11,32,70,0.4); }
+html.light .papers-list { border-top-color: rgba(11,32,70,0.06); }
+html.light .paper-row { border-bottom-color: rgba(11,32,70,0.04); }
+html.light .paper-row:hover { background: rgba(0,102,204,0.03); }
+html.light .paper-id { color: #0066CC; }
+html.light .paper-title { color: rgba(11,32,70,0.85); }
+html.light .paper-authors { color: rgba(11,32,70,0.4); }
+html.light .workshop-card { background: linear-gradient(135deg,rgba(130,80,255,0.05) 0%,rgba(80,0,200,0.04) 100%); }
+html.light .workshop-title { color: #0B2046; }
+html.light .award-card { background: linear-gradient(135deg,rgba(200,160,0,0.07) 0%,rgba(180,130,0,0.05) 100%); }
+html.light .award-title { color: #0B2046; }
+html.light .award-desc { color: #4A6080; }
+
+/* ── Light: News Ticker ─────────────── */
+html.light .news-ticker-bar {
+  background: rgba(0, 102, 204, 0.04);
+  border-bottom-color: rgba(11, 32, 70, 0.08);
+}
+html.light .ticker-label { background: #0066CC; color: #fff; }
+
+/* ── Light: Submissions View ────────── */
+html.light .portal-header-hud { border-left-color: #0066CC; }
+html.light .portal-sub { color: #4A6080; }
+html.light .accent-line { background: #0066CC; }
+html.light .submission-notice p { color: #4A6080; }
+html.light .rule-item { color: #4A6080; }
+html.light .rule-item.warning { background: rgba(244,196,48,0.06); }
+html.light .format-rule p { color: #4A6080; }
+html.light .language-note { color: rgba(11,32,70,0.4); opacity: 1; }
+html.light .temp-name { color: #0B2046 !important; }
+html.light .template-item {
+  background: rgba(11, 32, 70, 0.03);
+  border-color: rgba(11, 32, 70, 0.08);
+}
+html.light .policy-note {
+  background: rgba(0, 102, 204, 0.05);
+  color: #0066CC;
+}
+html.light .type-list li { color: #0B2046; }
+html.light .icon-blue { color: #0066CC; }
+html.light .btn-portal-primary {
+  background: #0066CC;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 102, 204, 0.25);
+}
+html.light .btn-portal-primary:hover { box-shadow: 0 5px 25px rgba(0, 102, 204, 0.4); }
+html.light .btn-download-mini { color: #0066CC; border-bottom-color: #0066CC; }
+html.light .strip-header { border-bottom-color: rgba(11, 32, 70, 0.08); }
+html.light .sidebar-section.highlight { background: rgba(0, 102, 204, 0.03); }
+
+/* ── Light: Committees / Registration / Info (shared) ── */
+html.light .registry-header-hud { color: #0B2046; }
+html.light .format-rules-strip { color: #0B2046; }
+
+/* ── Light: Accepted Works ──────────── */
+html.light .title-gradient {
+  background: linear-gradient(to right, #0B2046, rgba(11,32,70,0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html.light .subtitle { color: #4A6080; }
+html.light .btn-outline { background: rgba(11,32,70,0.03); border-color: rgba(11,32,70,0.1); color: #0B2046; }
+html.light .badge { background: rgba(0,102,204,0.08); border-color: rgba(0,102,204,0.2); color: #0B2046; }
+
+/* ── Light: Registration View ───────── */
+html.light .registry-header { border-bottom-color: rgba(11,32,70,0.08); }
+html.light .policy-text strong { color: #0B2046 !important; }
+html.light .btn-roadmap.outline { border-color: rgba(11,32,70,0.15); color: #0B2046; background: transparent; }
+
+/* ── Light: Committees View ─────────── */
+html.light .search-input-field,
+html.light .super-search {
+  color: #0B2046;
+  background: transparent;
+}
+html.light .search-input-field::placeholder,
+html.light .super-search::placeholder { color: rgba(11,32,70,0.3); }
+html.light .member-role,
+html.light .committee-role { color: #4A6080; }
+html.light .group-label,
+html.light .committee-group-label { color: rgba(11,32,70,0.45); }
+
+/* ── Light: Info / Venue View ───────── */
+html.light .venue-link,
+html.light .transport-item a { color: #0066CC; }
+html.light .contact-value { color: #0B2046; }
+html.light .info-label { color: rgba(11,32,70,0.45); }
+html.light .map-btn,
+html.light .direction-btn {
+  background: #0066CC;
+  color: #fff;
+}
+
+/* ── Light: rgba(255,255,255,x) text fix ── */
+/* Catches any rgba(255,255,255,0.4) style labels/subtexts */
+html.light .sidebar-header,
+html.light .track-id-slug,
+html.light .roadmap-header,
+html.light .hud-label,
+html.light .cert-label,
+html.light .fee-label,
+html.light .meta-block .label { color: rgba(11,32,70,0.4) !important; }
+
+html.light .slot-time,
+html.light .session-chairs,
+html.light .paper-authors,
+html.light .plenary-chair,
+html.light .pod-role,
+html.light .count-val { color: rgba(11,32,70,0.45) !important; }
+
+html.light .paper-title,
+html.light .session-title,
+html.light .slot-title-text,
+html.light .day-date { color: #0B2046 !important; }
+
+/* ── Extra Responsive Rules ──────────── */
+@media (max-width: 480px) {
+  .theme-toggle { display: flex; }
+  .section-header-block { padding: 40px var(--gutter) 20px; }
+  .section-headline { font-size: 1.6rem; }
+  .compact-strip { grid-template-columns: 1fr !important; }
+  .prog-title { font-size: 1.8rem; }
+  .day-tabs { gap: 8px; }
+  .day-tab { padding: 12px 14px; }
+  .day-date { font-size: 0.9rem; }
+}
+
+@media (max-width: 900px) {
+  .sponsors-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero-stats-panel { display: none; }
+  .section-header-block { padding: 40px var(--gutter) 16px; }
+  .sponsors-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-content { flex-direction: column; gap: 16px; align-items: flex-start; }
+}
+
+@media (max-width: 1024px) {
+  .compact-strip { grid-template-columns: repeat(3, 1fr) !important; }
+}
+
+@media (max-width: 700px) {
+  .compact-strip { grid-template-columns: repeat(2, 1fr) !important; }
 }

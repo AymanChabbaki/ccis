@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Routes, Route, useNavigate, useLocation, Link } from 'react-router-dom';
-import { 
-  Home, 
-  BookOpen, 
-  Users, 
-  Calendar, 
-  Mic2, 
-  Info, 
-  Menu, 
+import {
+  Home,
+  BookOpen,
+  Users,
+  Calendar,
+  Mic2,
+  Info,
+  Menu,
   X,
   FileEdit,
   CreditCard,
   Award,
   Globe,
-  Star
+  Star,
+  Sun,
+  Moon
 } from 'lucide-react';
 import HeroView from './views/HeroView';
 import TopicsView from './views/TopicsView';
@@ -34,6 +36,7 @@ const navItems = [
   { id: 'topics', label: 'Topics', icon: BookOpen, component: TopicsView, path: '/topics' },
   { id: 'deadlines', label: 'Dates', icon: Calendar, component: DeadlinesView, path: '/deadlines' },
   { id: 'speakers', label: 'Speakers', icon: Mic2, component: SpeakersView, path: '/speakers' },
+  //{ id: 'accepted', label: 'Program', icon: Award, component: ProgrammeView, path: '/accepted' },
   { id: 'accepted', label: 'Program', icon: Award, component: AcceptedWorksView, path: '/accepted' }, // ProgrammeView disabled until ready
   { id: 'submissions', label: 'Submissions', icon: FileEdit, component: SubmissionsView, path: '/submissions' },
   { id: 'registration', label: 'Registration', icon: CreditCard, component: RegistrationView, path: '/registration' },
@@ -47,6 +50,14 @@ function App() {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userCount, setUserCount] = useState(32);
+  const [lightMode, setLightMode] = useState(
+    () => localStorage.getItem('icisct-theme') === 'light'
+  );
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('light', lightMode);
+    localStorage.setItem('icisct-theme', lightMode ? 'light' : 'dark');
+  }, [lightMode]);
 
   // Determine active tab ID from current pathname
   const activeTabId = navItems.find(item => item.path === location.pathname)?.id || 'home';
@@ -76,10 +87,12 @@ function App() {
       <header className="main-header">
         <div className="nav-container container">
           <div className="branding">
-            <img 
-              src={`${ASSET_BASE}whitelogo.png`} 
-              alt="CWISCT'26 Logo" 
-              className="navbar-logo" 
+            <img
+              src={lightMode
+                ? `${ASSET_BASE}Logo_ICISCT_Fusion_B_Times_transparent.png`
+                : `${ASSET_BASE}whitelogo.png`}
+              alt="ICISCT'26 Logo"
+              className="navbar-logo"
               onClick={() => navigate('/')}
             />
             <div className="indexing-badges">
@@ -107,6 +120,13 @@ function App() {
               <span className="live-dot"></span>
               <span className="count-val">{userCount} Online</span>
             </div>
+            <button
+              className="theme-toggle"
+              onClick={() => setLightMode(m => !m)}
+              title={lightMode ? 'Switch to dark mode' : 'Switch to light mode'}
+            >
+              {lightMode ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
             <button className="btn-primary-shiny highlight" onClick={() => navigate('/submissions')}>Call for Paper</button>
             <button className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? <X /> : <Menu />}
@@ -182,13 +202,15 @@ function App() {
             <div className="sponsors-grid">
               <div className="sponsor-logo-box"><img src={`${ASSET_BASE}univh2clogo.png`} alt="Hassan II University" /></div>
               <div className="sponsor-logo-box"><img src={`${ASSET_BASE}fsbmlogo.png`} alt="FSBM Casablanca" /></div>
-              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}CNRSTlogo.png`} alt="CNRST Morocco" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}hps.png`} alt="HPS Morocco" /></div>
               <div className="sponsor-logo-box"><img src={`${ASSET_BASE}liaslogo.png`} alt="LIAS" /></div>
 
               <div className="sponsor-logo-box"><img src={`${ASSET_BASE}ltimlogo.png`} alt="LTIM" /></div>
                <div className="sponsor-logo-box">
-                <img src={`${ASSET_BASE}lams.png`} alt="LAMS" />
+                <img src={`${ASSET_BASE}LAMS.png`} alt="LAMS" />
               </div> 
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}AM2I.png`} alt="AM2I" /></div>
+              <div className="sponsor-logo-box"><img src={`${ASSET_BASE}ABC.png`} alt="ABC" /></div>
             </div>
           </div>
           

@@ -65,3 +65,22 @@ h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* ── Light Mode ──────────────────────────────────── */
+html.light {
+  --accent: #0066CC;
+  --bg-dark: #EEF4FC;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --text-primary: #0B2046;
+  --text-secondary: #4A6080;
+  --border-glass: rgba(11, 32, 70, 0.1);
+  --primary: #EEF4FC;
+}
+
+html.light body {
+  background-color: #EEF4FC;
+  background-image: radial-gradient(rgba(0, 80, 200, 0.04) 1px, transparent 1px);
+  color: #0B2046;
+}
+
+html.light ::-webkit-scrollbar-thumb { background: #0066CC; }
