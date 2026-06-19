@@ -339,14 +339,14 @@
   filter: brightness(0) invert(1) opacity(0.6);
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 1. univh2clogo 250×219 */ .sponsor-logo-box:nth-child(1) img { height: 54px; }
-/* 2. fsbmlogo    454×250 */ .sponsor-logo-box:nth-child(2) img { height: 40px; }
-/* 3. hps         441×114 */ .sponsor-logo-box:nth-child(3) img { height: 27px; max-width: 78%; }
-/* 4. liaslogo   2481×2482*/ .sponsor-logo-box:nth-child(4) img { height: 54px; }
-/* 5. ltimlogo   1280×1280*/ .sponsor-logo-box:nth-child(5) img { height: 62px; }
-/* 6. LAMS        952×1151*/ .sponsor-logo-box:nth-child(6) img { height: 59px; }
-/* 7. AM2I        500×500 */ .sponsor-logo-box:nth-child(7) img { height: 62px; }
-/* 8. ABC         289×289 */ .sponsor-logo-box:nth-child(8) img { height: 54px; }
+.sponsor-logo-box:nth-child(1) img { height: 68px; }
+.sponsor-logo-box:nth-child(2) img { height: 65px; }
+.sponsor-logo-box:nth-child(3) img { height: 27px; max-width: 78%; }
+.sponsor-logo-box:nth-child(4) img { height: 105px; }
+.sponsor-logo-box:nth-child(5) img { height: 130px; }
+.sponsor-logo-box:nth-child(6) img { height: 74px; }
+.sponsor-logo-box:nth-child(7) img { height: 95px; }
+.sponsor-logo-box:nth-child(8) img { height: 96px; }
 .sponsor-logo-box:hover {
   background: rgba(0, 229, 255, 0.08);
   border-color: var(--accent);
