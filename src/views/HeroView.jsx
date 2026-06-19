@@ -17,7 +17,7 @@ const HeroView = () => {
         <div className="hero-ring ring-3" />
         <div className="hero-ring ring-4" />
 
-        <img src={`${ASSET_BASE}hero.png`} alt="Smart City Future" className="hero-main-img" />
+        <img src={`${ASSET_BASE}hero1.png`} alt="Smart City Future" className="hero-main-img" />
 
         <div className="hero-content-wrapper container">
           <motion.div
