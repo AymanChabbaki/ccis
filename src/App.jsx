@@ -34,7 +34,7 @@ const navItems = [
   { id: 'topics', label: 'Topics', icon: BookOpen, component: TopicsView, path: '/topics' },
   { id: 'deadlines', label: 'Dates', icon: Calendar, component: DeadlinesView, path: '/deadlines' },
   { id: 'speakers', label: 'Speakers', icon: Mic2, component: SpeakersView, path: '/speakers' },
-  { id: 'accepted', label: 'Program', icon: Award, component: ProgrammeView, path: '/accepted' },
+  { id: 'accepted', label: 'Program', icon: Award, component: AcceptedWorksView, path: '/accepted' }, // ProgrammeView disabled until ready
   { id: 'submissions', label: 'Submissions', icon: FileEdit, component: SubmissionsView, path: '/submissions' },
   { id: 'registration', label: 'Registration', icon: CreditCard, component: RegistrationView, path: '/registration' },
   { id: 'committees', label: 'Committees', icon: Users, component: CommitteesView, path: '/committees' },
@@ -187,7 +187,7 @@ function App() {
 
               <div className="sponsor-logo-box"><img src={`${ASSET_BASE}ltimlogo.png`} alt="LTIM" /></div>
                <div className="sponsor-logo-box">
-                <img src={`${ASSET_BASE}lamslogo.png`} alt="LAMS" />
+                <img src={`${ASSET_BASE}lams.png`} alt="LAMS" />
               </div> 
             </div>
           </div>
