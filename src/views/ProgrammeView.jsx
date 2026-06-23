@@ -53,6 +53,30 @@ const days = [
           { id: '85', title: 'Cancelable Iris Authentication Using Hybrid Feature Extraction for Privacy Preserving Smart City Access Control', authors: 'LOURIGA, ZINE.EDDINE; JABRI, ISMAIL; EL OUAAZIZI, AZIZA; EL AFFAR, ANASS' },
           { id: '88', title: 'Artificial Intelligence in Cybersecurity: A Systematic Review of Threat Detection, Prevention, and Response Techniques', authors: 'Othmane, Aitlmoudden; LAMYAA, MOULAD; MOHAMED, HOUSNI; MOHAMMED, AITDAOUD' },
         ]},
+        { id: 's5', num: 5, title: 'AI, Machine Learning & Data Analytics Foundations', chairs: ['Ettaoufik Abdelaziz', 'Benlahmer Elhabib', 'Izid Malika', 'Zaouch Amal'], papers: [
+          { id: '3',  title: 'A Multi-Branch LSTM with Attention for Industrial Time-Series Fault Diagnosis', authors: 'EL harnaf, Ibtissam; Achtaich, Khadija; Tetouani, Samir' },
+          { id: '53', title: 'SMOTE for Stock Crash Prediction: A Negative Result on Imbalanced Financial Time Series', authors: 'Saifi, Wafae; Nouh, Said; Bahassine, Said; Chemseddine Idrissi, Imrane' },
+          { id: '75', title: 'AI vs. Traditional Methods in Big Data Cleaning and Validation: A Comparative Study of Accuracy, Time, and Error Rate', authors: 'NAIT SI BOURHIM, Ayoub; El Aissi, Mohamed El Mehdi; Benjelloun, Sarah; BOULAICH, Mohammed Ali; LAKHRISSI, Younes' },
+          { id: '84', title: 'A Survey on Imbalanced Learning in Supervised Classification: Methods, Metrics, and Applications', authors: 'Tajani, Youssef' },
+          { id: '51', title: 'A Smart Office System Based on Machine Learning and IoT in a University Campus', authors: 'IZOURANE, Fatim-zahra; Bella, Brahim' },
+          { id: '68', title: 'A Hybrid Machine Learning Framework for Insurance Risk Prediction: Combining Structured Data, Temporal Patterns, and Explainable AI', authors: 'ERRAHIBI, HAMZA; Chemlal, Yman; Azzouazi, Mohamed' },
+        ]},
+        { id: 's6', num: 6, title: 'Smart Agriculture, Sustainable Energy & Urban Green Spaces', chairs: ['Azzouazi Mohamed', 'Sekhara Youssef', 'Aharrane Nabil', 'Bouaine Chaimaa'], papers: [
+          { id: '17', title: 'IoT based Smart Grey Water Classification for Sewage Treatment Plant using TDS, pH, Temperature Sensors', authors: 'Nanduri, Dundisathishkumar' },
+          { id: '4',  title: 'Adaptive Multimodal Fusion of Visual, IoT, and Knowledge-Based Data for Context-Aware Plant Disease Diagnosis', authors: 'Alaoui, Fatima-zahra; ELJIANI, laila; elfilali, Sanaa; AIT ABDELOUAHID, rachida; Banou, zouhier; ellaky, zineb' },
+          { id: '55', title: 'Dynamic Decision Support in Smart Agriculture Through the Integration of Artificial Intelligence, Computer Vision, and Complex System Modeling', authors: 'Taymi, Imane' },
+          { id: '70', title: 'Semantic Segmentation and Machine Learning for Agricultural Yield Prediction Using Multi-Temporal Satellite and RGB Data in the Souss-Massa Region', authors: 'Abourabia, Imade' },
+          { id: '62', title: 'AI-Driven Adaptive Irrigation and Predictive Maintenance of Urban Green Spaces under Water Constraints in Smart Cities', authors: 'chafiq, fouad' },
+        ]},
+        { id: 's7', num: 7, title: 'Smart Governance and Digital Sovereignty for Urban Information Systems', chairs: ['Matrane Yassir', 'El Filali Sanaa', 'Jeannice Fairrer Samani', 'Khiati Mustapha'], papers: [
+          { id: '16', title: "Who Owns the Smart City? Digital Sovereignty and Urban Intelligence in Morocco's Smart City Transition", authors: 'Baidane, Salma; DAFIR, Amine' },
+          { id: '24', title: 'The Management of Intelligent Information Systems in Organizational Settings: Review of Recent Literature (2021–2026)', authors: 'EL MEKADEM, Noura' },
+          { id: '56', title: 'Exploring Artificial Intelligence Adoption for Smart University Governance in Morocco: A Survey-Based Needs Analysis', authors: 'CHAYMAA, ERRACHID; ACHTAICH, KHADIJA; AIT DAOUD, MOHAMMED' },
+          { id: '18', title: 'MENDARI: A Digital Inclusion Marketplace for Women Artisans and Home-Based Entrepreneurs', authors: 'elbejjaji, kawtar' },
+          { id: '26', title: 'AI-Driven Business Documentation: A Comprehensive Review of Approaches and Applications', authors: 'Sebbar, Abdelhamid; Zahour, Omar' },
+          { id: '77', title: 'Designing Emotion-Aware Customer Journeys through Artificial Intelligence: Trends, Applications, and Research Directions', authors: 'El Bhilat, HIND; BAADDI, MOHAMMED' },
+          { id: '89', title: 'Auditing Calculation Errors in Judicial Workers Compensation Awards: A Seven-Year Empirical Study Toward Smart Legal Governance', authors: 'KEMAL, zakaria; HANOUNE, mostafa' },
+        ]},
       ]},
       { time: '16:30–17:00', type: 'break', title: 'Coffee Break' },
       { time: '17:00–18:00', type: 'logistics', title: 'Day 1 Wrap-up & Discussion', description: 'Open floor discussion and summary of the first day' },
@@ -81,44 +105,18 @@ const days = [
           { id: '38', title: 'Cross Domain NeuroFusion Attention with Gradient Guided Multi Scale Deformable Spatial Attention Network for Brain Tumor Detection in CT and MRI', authors: 'W, Brajula' },
           { id: '39', title: 'Temperature Scaled Deformable Cross Modal Fusion with Monte Carlo Modulated Hierarchical Attention for Brain Tumor Detection from CT, MRI and Clinical Data', authors: 'W, Brajula' },
         ]},
+      ]},
+      { time: '13:00–15:30', type: 'break', title: 'Lunch Break', isLunch: true },
+      { time: '15:30–17:30', type: 'parallel', badge: 'ONLINE', sessions: [
         { id: 's10', num: 10, online: true, title: 'Digital Health, Smart Healthcare and Clinical Decision Support', chairs: ['Moukhliss Ghizlane', 'Aharrane Nabil', 'Hamal Oussama'], papers: [
-          { id: '5',  title: 'Marine Heat Pumps in Coastal Heating and Cooling Systems: Heat Exchanger Integration, Performance and Decarbonization Potential', authors: 'ABOU-ELFATH, ZAINA; EL-HAMDANI, SAKINA' },
+          { id: '5',  title: 'Marine Heat Pumps in Coastal Heating and Cooling Systems: Heat Exchanger Integration, Performance and Decarbonization Potential', authors: 'ABOUELFATH, ZAINA; EL-HAMDANI, SAKINA' },
           { id: '64', title: 'Machine Learning Approaches for Thermophysical Property Prediction of Sustainable Biodiesel Blends Containing Waste Cooking Oil and 1-Butanol', authors: 'SAMADI, Khaoula' },
           { id: '65', title: 'Photo-Oxidative Degradation of Low-Density Polyethylene Films under Natural Mediterranean Sunlight: A Multi-Technique Structural and Vibrational Study', authors: 'EL KZAINI, WIAM' },
           { id: '50', title: 'AI-Based Anomaly Detection and Real-Time Response Systems for Urban Green Space Management in Smart Cities: A Review', authors: 'MACHKOUR, LAILA; Bouhadda, Wail; Amchia, Mohamed; Ghazouani, Mohamed' },
           { id: '49', title: 'AI-Based Intelligent Irrigation Optimization for Urban Green Spaces Using Multi-Sensor Data: A Review', authors: 'Meriem, EL BRAHIMI; Laila, MACHKOUR; Wail, BOUHADDA; Mohamed, GHAZOUANI' },
           { id: '83', title: 'Multimodal and Multilingual AI for Plant Disease Diagnosis: A PRISMA Review for Smart Urban Agriculture', authors: 'kaissouni, oussama; OUAHABI, Sara; SAEL, Nawal' },
         ]},
-      ]},
-      { time: '13:00–15:00', type: 'break', title: 'Lunch Break', isLunch: true },
-      { time: '15:00–16:30', type: 'parallel', sessions: [
-        { id: 's5', num: 5, title: 'AI, Machine Learning & Data Analytics Foundations', chairs: ['Ettaoufik Abdelaziz', 'Benlahmer Elhabib', 'Izid Malika', 'Zaouch Amal'], papers: [
-          { id: '3',  title: 'A Multi-Branch LSTM with Attention for Industrial Time-Series Fault Diagnosis', authors: 'EL harnaf, Ibtissam; Achtaich, Khadija; Tetouani, Samir' },
-          { id: '53', title: 'SMOTE for Stock Crash Prediction: A Negative Result on Imbalanced Financial Time Series', authors: 'Saifi, Wafae; Nouh, Said; Bahassine, Said; Chemseddine Idrissi, Imrane' },
-          { id: '75', title: 'AI vs. Traditional Methods in Big Data Cleaning and Validation: A Comparative Study of Accuracy, Time, and Error Rate', authors: 'NAIT SI BOURHIM, Ayoub; El Aissi, Mohamed El Mehdi; Benjelloun, Sarah; BOULAICH, Mohammed Ali; LAKHRISSI, Younes' },
-          { id: '84', title: 'A Survey on Imbalanced Learning in Supervised Classification: Methods, Metrics, and Applications', authors: 'Tajani, Youssef' },
-          { id: '51', title: 'A Smart Office System Based on Machine Learning and IoT in a University Campus', authors: 'IZOURANE, Fatim-zahra; Bella, Brahim' },
-          { id: '68', title: 'A Hybrid Machine Learning Framework for Insurance Risk Prediction: Combining Structured Data, Temporal Patterns, and Explainable AI', authors: 'ERRAHIBI, HAMZA; Chemlal, Yman; Azzouazi, Mohamed' },
-        ]},
-        { id: 's6', num: 6, title: 'Smart Agriculture, Sustainable Energy & Urban Green Spaces', chairs: ['Azzouazi Mohamed', 'Sekhara Youssef', 'Aharrane Nabil', 'Bouaine Chaimaa'], papers: [
-          { id: '17', title: 'IoT based Smart Grey Water Classification for Sewage Treatment Plant using TDS, pH, Temperature Sensors', authors: 'Nanduri, Dundisathishkumar' },
-          { id: '4',  title: 'Adaptive Multimodal Fusion of Visual, IoT, and Knowledge-Based Data for Context-Aware Plant Disease Diagnosis', authors: 'Alaoui, Fatima-zahra; ELJIANI, laila; elfilali, Sanaa; AIT ABDELOUAHID, rachida; Banou, zouhier; ellaky, zineb' },
-          { id: '55', title: 'Dynamic Decision Support in Smart Agriculture Through the Integration of Artificial Intelligence, Computer Vision, and Complex System Modeling', authors: 'Taymi, Imane' },
-          { id: '70', title: 'Semantic Segmentation and Machine Learning for Agricultural Yield Prediction Using Multi-Temporal Satellite and RGB Data in the Souss-Massa Region', authors: 'Abourabia, Imade' },
-          { id: '62', title: 'AI-Driven Adaptive Irrigation and Predictive Maintenance of Urban Green Spaces under Water Constraints in Smart Cities', authors: 'chafiq, fouad' },
-        ]},
-        { id: 's7', num: 7, title: 'Smart Governance and Digital Sovereignty for Urban Information Systems', chairs: ['Matrane Yassir', 'El Filali Sanaa', 'Jeannice Fairrer Samani', 'Khiati Mustapha'], papers: [
-          { id: '16', title: "Who Owns the Smart City? Digital Sovereignty and Urban Intelligence in Morocco's Smart City Transition", authors: 'Baidane, Salma; DAFIR, Amine' },
-          { id: '24', title: 'The Management of Intelligent Information Systems in Organizational Settings: Review of Recent Literature (2021–2026)', authors: 'EL MEKADEM, Noura' },
-          { id: '56', title: 'Exploring Artificial Intelligence Adoption for Smart University Governance in Morocco: A Survey-Based Needs Analysis', authors: 'CHAYMAA, ERRACHID; ACHTAICH, KHADIJA; AIT DAOUD, MOHAMMED' },
-          { id: '18', title: 'MENDARI: A Digital Inclusion Marketplace for Women Artisans and Home-Based Entrepreneurs', authors: 'elbejjaji, kawtar' },
-          { id: '26', title: 'AI-Driven Business Documentation: A Comprehensive Review of Approaches and Applications', authors: 'Sebbar, Abdelhamid; Zahour, Omar' },
-          { id: '77', title: 'Designing Emotion-Aware Customer Journeys through Artificial Intelligence: Trends, Applications, and Research Directions', authors: 'El Bhilat, HIND; BAADDI, MOHAMMED' },
-          { id: '89', title: 'Auditing Calculation Errors in Judicial Workers Compensation Awards: A Seven-Year Empirical Study Toward Smart Legal Governance', authors: 'KEMAL, zakaria; HANOUNE, mostafa' },
-        ]},
-      ]},
-      { time: '15:30–17:30', type: 'parallel', badge: 'ONLINE', sessions: [
-        { id: 's11', num: 11, title: 'Smart Agriculture, Sustainable Energy & Urban Green Spaces', chairs: ['Aitdaoud Mohammed', 'Ait Abdelouahid Rachida', 'Elazzaby Fouzia'], papers: [
+        { id: 's11', num: 11, online: true, title: 'Smart Agriculture, Sustainable Energy & Urban Green Spaces', chairs: ['Aitdaoud Mohammed', 'Ait Abdelouahid Rachida', 'Elazzaby Fouzia'], papers: [
           { id: '33', title: 'Leveraging Pretrained Language Models for Conflict Discourse Analysis: A Case Study on Online Discussions', authors: 'Matrane, Yassir; Ellaky, Zineb; Banou, Zouheir; Alaoui, Fatima-zahra; Benabbou, Faouzia; Saber, Ilyes' },
           { id: '79', title: 'LocalTax-RAG: A Privacy-Preserving Intelligent Assistant for Moroccan Accounting and Tax Regulations', authors: 'Bouhsissin, Soukaina; Sael, Nawal' },
           { id: '94', title: 'Improving Cross-Language Plagiarism Detection through LLM-Based Candidate Retrieval', authors: 'BOUAINE, Chaimaa; ZAOUI, Chaimae; BENABBOU, Faouzia' },
@@ -126,14 +124,14 @@ const days = [
           { id: '27', title: 'UrbanT2V: Benchmarking Text-to-Video Diffusion Models for Smart City Visual Content Generation', authors: 'Hannouni, Salma; Belarache, Oumaima; BENLAHMAR, El Habib; El Filali, Sanaa' },
           { id: '28', title: 'Generative AI That Creates as Humans Do: A Multi-Modal Process Alignment Framework', authors: 'Moumtaz, Yosra; Chadi, Mohamed-Amine; Mouchawrab, Samar' },
         ]},
-        { id: 's12', num: 12, title: 'AI, Machine Learning & Data Analytics Foundations', chairs: ['Ouchra Hafsa', 'Yalid Amal', 'Hanoune Mustapha'], papers: [
+        { id: 's12', num: 12, online: true, title: 'AI, Machine Learning & Data Analytics Foundations', chairs: ['Ouchra Hafsa', 'Yalid Amal', 'Hanoune Mustapha'], papers: [
           { id: '41', title: 'LLM-Augmented MLOps for Smart City Infrastructure: Semantic Monitoring and Adaptive Decision Support in Production ML Systems', authors: 'ESSADEQ, ICHRAQ; Nouh, Said; Kandali, Khalid' },
           { id: '73', title: 'Adaptive Speed-Derived Proxy Risk Annotation for Risk-Aware Traffic Modeling in Urban Environments', authors: 'boulaid, sara; Bouhsissin, Soukaina; Zakrani, Abdelali; Banane, Mouad' },
           { id: '95', title: 'FedWEVOTE: A Meta-Learned Voting Aggregation Framework for Federated Learning', authors: 'ZAOUI, CHAIMAE; BOUAINE, chaimaa; BENABBOU, Faouzia; BANOU, Zouheir' },
           { id: '2',  title: 'From Reactive to Predictive Quality Management: An AI-Metrics Architecture Framework', authors: 'TALKAM, Issam; BELANGOUR, Abdessamad; HAMZANE, Ibrahim' },
           { id: '82', title: 'A Federated Deep Learning Framework for Privacy-Aware Intrusion Detection in IoT Environments', authors: 'Baich, Marwa' },
         ]},
-        { id: 's13', num: 13, title: 'Smart & Complex Systems', chairs: ['Benaddi Hafsa', 'Boutayed Mohamed', 'Ferjouchia Hanane'], papers: [
+        { id: 's13', num: 13, online: true, title: 'Smart & Complex Systems', chairs: ['Benaddi Hafsa', 'Boutayed Mohamed', 'Ferjouchia Hanane'], papers: [
           { id: '67', title: 'Empowering Urban Mobility Decisions: A Dynamic MATSim Framework for the Rabat Region', authors: 'Fathi, Yassine; Qbouche, Khalid; Rhoulami, Khadija' },
           { id: '20', title: 'Towards Resilient Urban Communication Infrastructure: A Defense-in-Depth Security Framework for VOIP Deployments in Smart City Environments', authors: 'ELLAKY, Zineb; Matrane, Yassir; Alaoui, Fatima-Zahra; Benabbou, Faouzia; Sael, Nawal' },
           { id: '40', title: 'Machine Learning and Decision Making in Construction Projects: A Systematic Review', authors: 'JABOURI, Anas; EZZIADI, Abdelali' },
