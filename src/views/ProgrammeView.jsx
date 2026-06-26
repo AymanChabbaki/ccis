@@ -43,12 +43,12 @@ const days = [
           { id: '72', title: 'SCAD: Automatic ODD Coverage Assessment from Unannotated Multimodal Naturalistic Driving Data', authors: 'Herchan, Asma' },
           { id: '74', title: 'NeuroRoute Calme: A Sensory-Aware Pedestrian Routing System for Neurodivergent and Mobility-Impaired Users Using Multi-Criteria Graph Optimization', authors: 'HAIMOUD, Abdelaziz; ikbaiss, abdelghafour; Kassmi, Ayoub' },
         ]},
-        { id: 's4', num: 4, title: 'Cybersecurity, Privacy, Blockchain & Digital Trust', chairs: ['Belangour Abdessamad', 'Benaddi Hafsa', 'Gaber Tarek', 'Silkan Hassan'], papers: [
+        { id: 's4', num: 4, title: 'Cybersecurity, Privacy, Blockchain & Digital Trust', chairs: ['Belangour Abdessamad', 'Benaddi Hafsa', 'Gaber Tarek', 'Sikan Hassan'], papers: [
           { id: '44', title: 'Blockchain and IOTA-Based Distributed Ledger Architectures for Secure and Scalable IoT Systems', authors: 'elmnajja, dina; fartitchou, Mohamed; daouayry, youssef; kannouf, Nabil' },
           { id: '57', title: 'GraphCodeBERT-Based Hybrid Models for Solidity Smart Contract Vulnerability Detection', authors: 'el inani, najwa; BENABBOU, Faouzia; SABIRI, Khadija' },
           { id: '58', title: 'Cross-Modal Fake News Detection on Social Media Using Textual and Visual Consistency Analysis', authors: 'Qaqa, Saad; BENABBOU, Faouzia' },
           { id: '7',  title: 'JJ2: Zero Trust Browser Extension for Secure Payment and Fraud Prevention', authors: 'A, Kathiravan; R, Abishek; M, Mayakannan; G, Madhankumar; Dr B. Kalaiselvi' },
-          { id: '19', title: 'Vulnerability Surface Analysis of the Model Context Protocol in Agentic Middleware: A 60-Day CVE Dissection with Neuromorphic Detection Frameworks', authors: 'Bhanushali, Akshay' },
+          { id: '19', title: 'Vulnerability Surface Analysis of the Model Context Protocol in Agentic Middleware: A 60-Day CVE Dissection with Neuromorphic Detection Frameworks and Distributed Tool Integrity Verification', authors: 'Bhanushali, Akshay' },
           { id: '37', title: 'Energy-Efficient Intrusion Detection in WSN using Adaptive Swarm Optimization and Advanced Deep Neural Network', authors: 'W, Brajula' },
           { id: '85', title: 'Cancelable Iris Authentication Using Hybrid Feature Extraction for Privacy Preserving Smart City Access Control', authors: 'LOURIGA, ZINE.EDDINE; JABRI, ISMAIL; EL OUAAZIZI, AZIZA; EL AFFAR, ANASS' },
           { id: '88', title: 'Artificial Intelligence in Cybersecurity: A Systematic Review of Threat Detection, Prevention, and Response Techniques', authors: 'Othmane, Aitlmoudden; LAMYAA, MOULAD; MOHAMED, HOUSNI; MOHAMMED, AITDAOUD' },
@@ -90,7 +90,7 @@ const days = [
       { time: '11:00–11:30', type: 'break', title: 'Coffee Break' },
       { time: '11:30–13:00', type: 'parallel', sessions: [
         { id: 's8', num: 8, title: 'AI-Powered Language Technologies and Agentic Systems for Smart Services', chairs: ['Aouhassi Sarah', 'Lmati Imane', 'Zaouch Amal', 'Zaoui Chaimae'], papers: [
-          { id: '80', title: 'A Systematic Review of Information Extraction from Legal Documents: From Rule-Based Systems to LLMs and Knowledge Graphs for Smart Governance', authors: 'Zahid, Achraf; Nawal, SAEL' },
+          { id: '80', title: 'A Systematic Review of Information Extraction from Legal Documents: From Rule-Based Systems to Large Language Models and Knowledge Graphs for Smart Governance', authors: 'Zahid, Achraf; Nawal, SAEL' },
           { id: '13', title: 'From Brains to Swarms: A Systems Architecture for LLM-Based Autonomous Agents', authors: 'Singh, Shantanu' },
           { id: '14', title: 'From Solo Actors to Orchestrated Ecosystems: Disentangling AI Agents and Agentic AI', authors: 'Singh, Shantanu' },
           { id: '34', title: 'Intelligent Real-Time Detection of Dynamic Objects in Video Scenes through Computer Vision and AI: Smart City Application', authors: 'bouchama, touhami' },
@@ -145,7 +145,7 @@ const days = [
   {
     id: 2, label: 'Day 3', date: 'Saturday, June 27', theme: 'Workshops, Competition & Closing',
     slots: [
-      { time: '09:00–10:00', type: 'plenary', num: 5, title: 'AI Against Financial Fraud: From Emerging Threats to Intelligent Defense Strategies', speaker: 'Mr. Ismail Harti', affiliation: 'Strategic Cybersecurity and IT Risk Leader at HPS — Talk & Practical Demonstration on AI-Powered Fraud Detection and Risk Management', chair: 'Pr. Ouahbi Sara' },
+      { time: '09:00–10:00', type: 'plenary', num: 5, title: 'AI Against Financial Fraud: From Emerging Threats to Intelligent Defense Strategies', speaker: 'Mr ISMAIL HARTI', affiliation: 'Information Security & Risk Senior Manager, HPS Group', description: 'Talk & Practical Demonstration on AI-Powered Fraud Detection and Risk Management', chair: 'Pr. Ouahbi Sara' },
       { time: '10:00–11:00', type: 'workshop', title: 'Practical Workshops — HPS Group Experts', chair: 'HPS Group' },
       { time: '11:00–11:30', type: 'break', title: 'Coffee Break' },
       { time: '11:30–12:00', type: 'parallel', sessions: [
@@ -165,7 +165,7 @@ const days = [
           { id: '9',  title: 'AI-Assisted Virtual Screening and Molecular Docking for Smart Health: A Systematic Literature Review', authors: 'ELYAZYD, Oumaima; CHTITA, Samir; AIT DAOUD, Mohammed' },
           { id: '78', title: 'YOLO-Based Pedestrian Detection and Monocular Distance Estimation', authors: 'HAMZA, ASSEMLALI' },
         ]},
-        { id: 'student', num: '★', isCompetition: true, title: 'Best Innovative Student Project Award', chairs: ['Sekhara Youssef', 'Benabbou Faouzia', 'Ouahabi Sara', 'Ettaoufik Abdelaziz', 'Sael Nawal'], papers: [
+        { id: 'student', num: '★', isCompetition: true, title: 'Project presentation — Best Innovative Project Award', chairs: ['Sekhara Youssef', 'Benabbou Faouzia', 'Ouahabi Sara', 'Ettaoufik Abdelaziz', 'Sael Nawal'], papers: [
           { id: 'P1', title: 'Smart Bakery: AI-Driven Supply Chain Optimization and Demand Forecasting for Urban Environments', authors: 'kachmar, Mohamed Taha; Essadiki, ibtissam; TALHOUT, Soumia; basslam, Yahya; louardi, adnane' },
           { id: 'P2', title: 'Intelligent Drone-Based Thermal Inspection for Solar Energy Infrastructure', authors: 'kraichy, Mohamed akrame; en-najdy, hajar' },
           { id: 'P3', title: 'AI-Based Groundwater Recharge Prediction Using LSTM and Geospatial Data', authors: 'EN-NAJDY, hajar; kraichy, Mohamed akrame' },
@@ -176,7 +176,7 @@ const days = [
           { id: 'P8', title: 'End-to-End Data Pipeline: Data Ingestion, Transformation, and Analytical Visualization', authors: 'Mohammed, Anouar' },
         ]},
       ]},
-      { time: '12:30–13:00', type: 'award', title: 'Best Innovative Students Project Award Ceremony', description: 'Finals and prize ceremony for the Best Innovative Students Project Award competition' },
+      { time: '12:30–13:00', type: 'award', title: 'Best Innovative Students Project Award ceremony', description: 'Finals and prize ceremony for the Best Innovative Students Project Award competition' },
       { time: '13:00–13:30', type: 'ceremony', title: 'Official Closing Ceremony', description: "Official closing of ICISCT 2026 — Faculty of Sciences Ben M'Sik, Casablanca, Morocco" },
     ]
   }
@@ -281,6 +281,7 @@ const ProgrammeView = () => {
           <div className="plenary-num">PLENARY {slot.num}</div>
           <h3 className="plenary-title">{slot.title}</h3>
           <div className="plenary-speaker"><Mic2 size={14}/> <strong>{slot.speaker}</strong> — {slot.affiliation}</div>
+          {slot.description && <div className="plenary-desc">{slot.description}</div>}
           <div className="plenary-chair"><Users size={12}/> Chair: {slot.chair}</div>
         </div>
       </motion.div>
@@ -403,6 +404,7 @@ const ProgrammeView = () => {
         .plenary-num { font-size: 0.6rem; font-weight: 900; letter-spacing: 3px; color: var(--accent); margin-bottom: 8px; }
         .plenary-title { font-size: 1rem; font-weight: 800; color: #fff; line-height: 1.4; margin-bottom: 12px; }
         .plenary-speaker { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+        .plenary-desc { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.5; margin-bottom: 6px; }
         .plenary-chair { display: flex; align-items: center; gap: 6px; font-size: 0.72rem; color: rgba(255,255,255,0.35); }
 
         .ceremony-card { flex: 1; background: linear-gradient(135deg, rgba(255,180,50,0.06) 0%, rgba(200,100,0,0.06) 100%); border: 1px solid rgba(255,180,50,0.2); border-left: 3px solid #FFB432; border-radius: 14px; padding: 20px 24px; }
